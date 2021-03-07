@@ -39,6 +39,9 @@ export default{
   Here we load the YouTube iFrame API. This creates the `window.YT` global that gives us access to
   the API. This script will only be loaded once.
 */
+
+/* This is a commment that I will remove after */
+
         var tag = document.createElement('script');
         tag.src = 'https://www.youtube.com/iframe_api';
         var firstScriptTag = document.getElementsByTagName('script')[0];

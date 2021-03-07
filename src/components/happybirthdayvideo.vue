@@ -23,15 +23,8 @@
 </template>
 
 <script>
-/*
-  Here we load the YouTube iFrame API. This creates the `window.YT` global that gives us access to
-  the API. This script will only be loaded once.
-*/
-var tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-console.log("Youtube iFrame API script inserted.");
+
+
 
 export default{
     data: function () {
@@ -42,6 +35,15 @@ export default{
 
     mounted: function () {
         console.log("YTVideo component mounted.");
+        /*
+  Here we load the YouTube iFrame API. This creates the `window.YT` global that gives us access to
+  the API. This script will only be loaded once.
+*/
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        console.log("Youtube iFrame API script inserted.");
     /*
       We need to use Vue's `mounted` lifecycle hook to wait for the component to be mounted
       so that we can access the `ytplayer` ref.

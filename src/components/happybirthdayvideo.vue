@@ -18,15 +18,14 @@
             <span>WATCH NOW</span>
             <g-image src='~/assets/images/play_button.png' alt='play button'/>
         </button>
-        
     </section>
 </template>
 
 <script>
 
-
-
 export default{
+
+
     data: function () {
         return {
             playerReady: false,
@@ -115,6 +114,6 @@ export default{
       */
       this._player.playVideo();
     },
-  },
+ },
 };
 </script>

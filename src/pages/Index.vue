@@ -3,6 +3,7 @@
     <Header />
     <main>
       <HappyBirthday />
+      <TwitterLink />
       <CandleMap />
     </main>
     <Footer />
@@ -15,6 +16,7 @@ import Header                 from "~/components/header.vue";
 import HappyBirthday          from "~/components/happybirthdayvideo.vue";
 import CandleMap              from "~/components/candlemap.vue";
 import Footer                 from "~/components/footer.vue";
+import TwitterLink            from "~/components/twitterlink.vue";
 
 export default {
   metaInfo: {
@@ -23,6 +25,7 @@ export default {
   components: {
     Header,
     HappyBirthday,
+    TwitterLink,
     CandleMap,
     Footer
   }

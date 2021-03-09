@@ -1,9 +1,50 @@
 /* =========================================================== */
 /* !HEADER */
 
-#main-header {
-    background-color: red;
-    height: 80px;
 
+#logo {
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    transition: 0.3s ease;
+    opacity: 0;
 }
 
+#main-header {
+    background-color: grey;
+    height: 15vh;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    display: flex;
+}
+#main-header.show #logo{
+    opacity: 1;
+    display: block;
+}
+
+#main-header.show #header--tweet-cta{
+    opacity: 1;
+}
+
+#main-header > .inner {
+    position: relative;
+    width: 100%;
+    padding: 0px 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta {
+    width: 40rem;
+}
+
+#main-header #header--tweet-cta {
+    opacity: 0;
+    transition: 0.5s ease;
+}   

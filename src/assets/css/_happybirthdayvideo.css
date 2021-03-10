@@ -46,3 +46,43 @@
     opacity: 0;
     z-index: 0;
   }
+
+.hero-content{
+    color: #fff;
+    z-index: 2000000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-content h1 span {
+    color: steelblue;
+    word-wrap: normal;
+    display: inline-block;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    width: 70%;
+}
+
+.hero-content h1, p {
+    color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+    .hero-content {
+        top: -50px;
+        font-size: 10px;
+        display: block;
+    }
+
+    .hero-content h1 {
+    font-size: 1rem;
+    width: 70%;
+    }
+    #video-section {
+        padding: 1rem
+    }
+}
+

@@ -29,6 +29,15 @@
 
 #main-header.show #header--tweet-cta{
     opacity: 1;
+    margin-right: 7.2rem
+}
+
+@media screen and  (max-width: 480px) {
+    #main-header > .inner {
+        max-width: 860px;
+        width: 860px;
+        margin: 0 auto;
+    }
 }
 
 #main-header > .inner {

@@ -1,10 +1,18 @@
 <template>
+  <div class="inner">
+
+  
   <section>
     <!-- Note that we use a `ref` attribute, not an `id`, to reference the iframe . The iframe src needs the enablejsapi flag as well, so that we can actually use the iFrame API.
       It's also important that the iframe allows autoplay, or else the video will not play in some browsers -->
+    
     <div id="video-section">
       <div class="video-size">
         <div class="video-wrapper">
+          <div class="hero-content">
+          <h1>Happy 15<sup>th</sup><span>birthday twitter</span></h1>
+          <p>We hope you have a happier 15<sup>th</sup>than the victims of child sexual abuse you fail to protect.</p>
+          </div>
           <button @click="play" :disabled="!playerReady">
             <g-image
             src='~/assets/images/video_thumbnail.png' alt='thumb'
@@ -22,7 +30,7 @@
         </div>
       </div>
     </div>
-    
+  
     <!--<g-image src="~/assets/images/play_button.png" alt="play button" />-->
     
     
@@ -32,6 +40,7 @@
       <g-image src="~/assets/images/play_button.png" alt="play button" />
     </button>-->
   </section>
+  </div>
 </template>
 
 <script>

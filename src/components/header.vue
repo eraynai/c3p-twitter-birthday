@@ -47,7 +47,7 @@
         },
         methods: {
             showHideNav() {
-                this.showNav = window.pageYOffset > 500 ? true : false;
+                this.showNav = window.pageYOffset > 100 ? true : false;
             },
             onClose(){},
             onOpen(){},

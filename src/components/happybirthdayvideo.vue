@@ -1,33 +1,36 @@
 <template>
-  <section class="happybirthday-video">
-    <div>
-      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
-      <p>
-        lorem ipsDolore sint dolore enim cupidatat fugiat laboris magna
-        laboris.Commodo aliquip enim voluptate sunt tempor aliqua ipsum culpa
-        excepteur ad proident aute reprehenderit deserunt.
-      </p>
-    </div>
+  <section>
     <!-- Note that we use a `ref` attribute, not an `id`, to reference the iframe . The iframe src needs the enablejsapi flag as well, so that we can actually use the iFrame API.
       It's also important that the iframe allows autoplay, or else the video will not play in some browsers -->
-    <div class="container">
-      <img
-        src="http://placekitten.com/800/450"
-        :class="{ hidden: videoPlaying }"
-      />
-      <iframe
-        ref="ytplayer"
-        width="560"
-        height="315"
-        allow="autoplay"
-        src="https://www.youtube-nocookie.com/embed/ppp5Q70PYPU?enablejsapi=1&controls=0"
-      ></iframe>
+    <div id="video-section">
+      <div class="video-size">
+        <div class="video-wrapper">
+          <button @click="play" :disabled="!playerReady">
+            <g-image
+            src='~/assets/images/video_thumbnail.png' alt='thumb'
+            :class="{ hidden: videoPlaying }"
+            class="play-image"
+          />
+          </button>
+          <iframe
+            ref="ytplayer"
+            width="560"
+            height="315"
+            allow="autoplay"
+            src="https://www.youtube-nocookie.com/embed/ppp5Q70PYPU?enablejsapi=1"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    <!--We disable the play button until the player is ready.-->
+    
+    <!--<g-image src="~/assets/images/play_button.png" alt="play button" />-->
+    
+    
+      
+    <!--We disable the play button until the player is ready.
     <button @click="play" :disabled="!playerReady" class="watchnow-button">
-      <span>WATCH NOW</span>
       <g-image src="~/assets/images/play_button.png" alt="play button" />
-    </button>
+    </button>-->
   </section>
 </template>
 
@@ -91,7 +94,7 @@ export default {
             this.playerReady = true;
           },
           onStateChange: (event) => {
-            if (event.data === 0 || event.data === 2) {
+            if (event.data === 0) {
               this.videoPlaying = false;
             }
           },
@@ -133,13 +136,3 @@ export default {
 };
 </script>
 
-<style>
-img {
-  opacity: 1;
-  transition: 0.5s ease;
-}
-
-img.hidden {
-  opacity: 0;
-}
-</style>

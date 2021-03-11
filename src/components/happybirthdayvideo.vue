@@ -11,8 +11,8 @@
         <div class="video-wrapper">
           <div class="hero-content">
           <!--<g-image src='~/assets/images/background-image-2.png' alt='thumb' class="back-image"/>-->
-          <h1>Happy 15<sup>th</sup><br> birthday twitter</span></h1>
-          <p>We hope you have a happier 15<sup>th</sup><br>than the victims of child sexual abuse you fail to protect.</p>
+          <h1>Happy 15<sup id="sup-happy-big">th</sup><br> birthday,</br><span id="blue-twitter">twitter</span></h1>
+          <p>We wish you'd grow up and do more<br> to protect victims of child sexual abuse<br> on your platform.</p>
           </div>
           <button @click="play" :disabled="!playerReady">
             <g-image

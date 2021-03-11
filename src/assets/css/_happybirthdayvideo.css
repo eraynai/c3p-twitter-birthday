@@ -4,6 +4,8 @@
 #video-section {
     position: relative;
     padding: 7% 6% 4% 11%;
+    max-width: 90%;
+    left: 10%;
 }
 
 .video-size {
@@ -47,6 +49,33 @@
    /* top: 50%;
     left: -20%;
     transform: translateY(-50%);*/
+    top: 10%;
+    left: -13%;
+}
+
+.hero-content h1 {
+    font-family: rift, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 6rem;
+    line-height: 1;
+}
+
+.hero-content p {
+    font-family: quatro, sans-serif;
+    font-weight: 100;   
+    font-style: normal;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top: 4rem;
+}
+
+#sup-happy-big {
+    font-size: 3rem;
+}
+
+#blue-twitter {
+    color: #00acee;
 }
 
 /*.hero-content h1 span {
@@ -97,4 +126,5 @@
 
 .inner-background {
     background-image: url('../images/background-image-2.png');
+    background-position: 32%;
 }

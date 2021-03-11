@@ -16,6 +16,16 @@
     box-sizing: inherit;
 }
 
+/*@font-face{
+    font-family: "rift";
+    src:url(../fonts/Rift-Bold.otf);
+}
+
+@font-face{
+    font-family: "quat";
+    src:url(../fonts/Quatro.woff);
+}*/
+
 html {
     font-size: 62.5%;
    

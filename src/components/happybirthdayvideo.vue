@@ -9,17 +9,17 @@
     <div id="video-section">
       <div class="video-size">
         <div class="video-wrapper">
-          <div class="hero-content">
+          <div class="hero-content" :class="{ hidden: videoPlaying }">
           <!--<g-image src='~/assets/images/background-image-2.png' alt='thumb' class="back-image"/>-->
           <h1>Happy 15<sup id="sup-happy-big">th</sup><br> birthday,</br><span id="blue-twitter">twitter</span></h1>
           <p>We wish you'd grow up and do more<br> to protect victims of child sexual abuse<br> on your platform.</p>
           </div>
           <button @click="play" :disabled="!playerReady">
+            <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
+            <span class="watch-now-text" :class="{ hidden: videoPlaying }">Watch Now</span>
             <g-image
             src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='thumb'
-            :class="{ hidden: videoPlaying }"
-            class="play-image"
-          />
+            class="play-image" :class="{ hidden: videoPlaying }"/>
           </button>
           <iframe
             ref="ytplayer"
@@ -107,6 +107,7 @@ export default {
           onStateChange: (event) => {
             if (event.data === 0) {
               this.videoPlaying = false;
+              console.log('are you being pressed?');
             }
           },
         },

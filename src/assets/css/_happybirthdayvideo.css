@@ -59,7 +59,7 @@
     font-family: canada-type-gibson, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1440 - 300)));
+    font-size: calc(7px + (22 - 7) * ((100vw - 300px) / (1440 - 300)));
     color: white;
 }
 

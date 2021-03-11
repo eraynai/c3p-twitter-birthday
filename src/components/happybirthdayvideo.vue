@@ -1,21 +1,22 @@
 <template>
-  <div class="inner">
+  <div class="inner-background">
 
   
-  <section>
+      <section>
     <!-- Note that we use a `ref` attribute, not an `id`, to reference the iframe . The iframe src needs the enablejsapi flag as well, so that we can actually use the iFrame API.
       It's also important that the iframe allows autoplay, or else the video will not play in some browsers -->
-    
+     
     <div id="video-section">
       <div class="video-size">
         <div class="video-wrapper">
           <div class="hero-content">
-          <h1>Happy 15<sup>th</sup><span>birthday twitter</span></h1>
-          <p>We hope you have a happier 15<sup>th</sup>than the victims of child sexual abuse you fail to protect.</p>
+          <!--<g-image src='~/assets/images/background-image-2.png' alt='thumb' class="back-image"/>-->
+          <h1>Happy 15<sup>th</sup><br> birthday twitter</span></h1>
+          <p>We hope you have a happier 15<sup>th</sup><br>than the victims of child sexual abuse you fail to protect.</p>
           </div>
           <button @click="play" :disabled="!playerReady">
             <g-image
-            src='~/assets/images/video_thumbnail.png' alt='thumb'
+            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='thumb'
             :class="{ hidden: videoPlaying }"
             class="play-image"
           />
@@ -25,6 +26,7 @@
             width="560"
             height="315"
             allow="autoplay"
+            frameborder="0"
             src="https://www.youtube-nocookie.com/embed/ppp5Q70PYPU?enablejsapi=1"
           ></iframe>
         </div>
@@ -39,7 +41,7 @@
     <button @click="play" :disabled="!playerReady" class="watchnow-button">
       <g-image src="~/assets/images/play_button.png" alt="play button" />
     </button>-->
-  </section>
+    </section>
   </div>
 </template>
 
@@ -144,4 +146,3 @@ export default {
   },
 };
 </script>
-

@@ -1,5 +1,6 @@
 <template>
     <header id="main-header" :class="{ show: showNav }">
+    <div class="background">
         <div class="inner">
             <div id="logo">
                 <div>
@@ -17,12 +18,17 @@
             <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
             </s-twitter>
         </div>
+    </div>
     </header>
 </template>
 
 <script>
 
     import { STwitter } from 'vue-socials'
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    gsap.registerPlugin(ScrollTrigger);
+
     export default {
     name: 'STwitterSharing',
 
@@ -42,13 +48,13 @@
             };
         },
         mounted() {
-            this.showHideNav();
-            window.addEventListener("scroll", this.showHideNav);
+            /*this.showHideNav();
+            window.addEventListener("scroll", this.showHideNav);*/
         },
         methods: {
-            showHideNav() {
-                this.showNav = window.pageYOffset > 100 ? true : false;
-            },
+            /*showHideNav() {
+                this.showNav = window.pageYOffset > window.innerHeight ? true : false;
+            },*/
             onClose(){},
             onOpen(){},
             onBlock(){},

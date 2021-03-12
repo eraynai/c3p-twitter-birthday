@@ -1,6 +1,10 @@
 /* =========================================================== */
 /* !CANDLEMAP */
 
-#candlemap {
-    background-color: palegreen;
+.hero-content-2 {
+    color: #00acee;
+    font-size: 3.6rem;
+    font-family: rift, sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }

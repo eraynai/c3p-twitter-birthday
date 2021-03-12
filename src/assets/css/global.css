@@ -36,3 +36,25 @@ body {
     background-color: #0e141c;
 
 }
+
+.wrapper {
+    width: 89%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.inner-background{
+    background-image: url('../images/background-image-2-v2.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: right;
+}

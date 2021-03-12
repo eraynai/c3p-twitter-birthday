@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <g-image src='~/assets/images/c3p_logo.png' alt='thumb'/>
+     
         <div class="social-logos">
             <g-image src='~/assets/images/facebook_1.svg' alt='thumb'/>
             <g-image src='~/assets/images/twitter.svg' alt='thumb'/>

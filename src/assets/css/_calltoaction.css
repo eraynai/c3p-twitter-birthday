@@ -1,0 +1,11 @@
+.cta-content {
+    font-size: 2rem;
+    color: white;
+    font-family: quatro, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.9;
+}

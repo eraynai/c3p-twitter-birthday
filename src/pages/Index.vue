@@ -4,6 +4,7 @@
     <main>
       <HappyBirthday />
       <CallToAction />
+      <ProudTwitter />
       <CandleMap />
     </main>
     <Footer />
@@ -17,6 +18,7 @@ import HappyBirthday          from "~/components/happybirthdayvideo.vue";
 import CandleMap              from "~/components/candlemap.vue";
 import Footer                 from "~/components/footer.vue";
 import CallToAction           from "~/components/calltoaction.vue";
+import ProudTwitter           from "~/components/proudtwitter.vue";
 
 export default {
   metaInfo: {
@@ -26,6 +28,7 @@ export default {
     Header,
     HappyBirthday,
     CallToAction,
+    ProudTwitter,
     CandleMap,
     Footer
   }

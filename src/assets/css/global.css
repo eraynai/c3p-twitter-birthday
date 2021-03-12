@@ -4,6 +4,7 @@
 @import '_candlemap.css';
 @import '_footer.css';
 @import '_calltoaction.css';
+@import '_proudtwitter.css';
 
 
 /* =========================================================== */
@@ -47,9 +48,11 @@ body {
 
 .hero {
     
-    height: 85vh;
+    /*height: 85vh;*/
     display: flex;
     align-items: center;
+    padding-top: 140px;
+    padding-bottom: 50px;
 }
 
 .cta-section {
@@ -70,4 +73,79 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/*New styles*/
+@media screen and (max-width: 920px) and (min-width: 769px){
+
+}
+@media (max-width: 768px) {
+    .inner-background {
+        background-size: cover;
+        background-position: 42vw center;
+    }
+    
+    section.hero.wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-content {
+        position: relative;
+        top: 0;
+        transform: translate(0);
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 51.8px;
+    }
+    
+    .hero-content p {
+        margin-top: 16px;
+        font-size: 14.5px;
+        line-height: 19.2px;
+        display: block;
+        width: 100%;
+    }
+
+    #video-section {
+        margin: 36px 0 0;
+        width: 100%;
+    }
+
+    .inner-background-cta {
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .cta-content {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    
+    .cta-content p {
+        margin-bottom: 15px;
+    }
+    
+    .cta-content p:last-child {
+        margin: 0;
+    }
+    
+    .cta-section {
+        height: auto;
+        padding: 37px 0;
+    }
+
+    .hero-content-2 {
+        padding: 71px 17px 35.7px;
+        
+    }
+    
+    .hero-content-2 h2 {
+        font-size: 25.9px;
+        line-height: 30.2px;
+        text-align: center;
+        font-weight: 500;
+    }
 }

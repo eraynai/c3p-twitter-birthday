@@ -48,13 +48,13 @@
             };
         },
         mounted() {
-            /*this.showHideNav();
-            window.addEventListener("scroll", this.showHideNav);*/
+            this.showHideNav();
+            window.addEventListener("scroll", this.showHideNav);
         },
         methods: {
-            /*showHideNav() {
+            showHideNav() {
                 this.showNav = window.pageYOffset > window.innerHeight ? true : false;
-            },*/
+            },
             onClose(){},
             onOpen(){},
             onBlock(){},

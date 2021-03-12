@@ -3,6 +3,7 @@
 @import '_happybirthdayvideo.css';
 @import '_candlemap.css';
 @import '_footer.css';
+@import '_calltoaction.css';
 
 
 /* =========================================================== */
@@ -45,9 +46,14 @@ body {
 }
 
 .hero {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    
     height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.cta-section {
+    height: 44vh;
     display: flex;
     align-items: center;
 }
@@ -57,4 +63,11 @@ body {
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.inner-background-cta {
+    background-image: url('../images/background-image-cta.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

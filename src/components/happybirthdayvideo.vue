@@ -41,11 +41,16 @@
     </button>-->
     </div>
     </section>
+    <PageFold @passedFold="$emit('passedFold')"/>
     </div>
 </template>
 
 <script>
+import PageFold               from "~/components/pagefold.vue";
 export default {
+  components: {
+
+  },
   data: function() {
     return {
       playerReady: false,
@@ -144,5 +149,8 @@ export default {
       this.videoPlaying = true;
     },
   },
+  components: {
+    'PageFold': PageFold
+  }
 };
 </script>

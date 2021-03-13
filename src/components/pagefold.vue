@@ -1,5 +1,5 @@
 <template>
-    <h1 :class="{ hidden: shouldShow }" >Test</h1>
+    <h1>Test</h1>
 </template>
 
 <style>
@@ -10,21 +10,19 @@
 
 <script>
     export default {
+        name: 'PageFold',
         data: function(){
             return {
-                shouldShow: false,
+                showNav: false,
         };
         },
         mounted(){
             this.$el;
             let observer = new IntersectionObserver((array) => {
-                console.log(array[0].isIntersecting);
-                if(array[0].isIntersecting === true){
-                    this.shouldShow = false;
-                }
-                else {
-                    this.shouldShow = true;
+                if (array[0].isIntersecting === false) {
+                    this.$emit("passedFold");
                     observer.disconnect();
+                    console.log('intersection working?');
                 }
             });
             observer.observe(this.$el);

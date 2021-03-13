@@ -27,6 +27,14 @@
     display: block;
 }
 
+.hideTwitterButton {
+    opacity: 0;
+}
+
+.showTwitterButton {
+    opacity: 1;
+}
+
 #main-header.show #header--tweet-cta{
     opacity: 1;
     margin-right: 7.2rem

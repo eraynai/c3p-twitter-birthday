@@ -3,8 +3,8 @@
     <!--<div class="background">-->
         <div class="nav wrapper">
             <div id="logo">
-                <span id="twitterhastag" :class="{ hidden: hideNav }">#GrowUpTwitter</span>
-                <s-twitter :class="{ show: shouldShow }"
+                <span id="twitterhastag" :class="{ hidden: hideNav && !showNav }">#GrowUpTwitter</span>
+                <s-twitter :class="{ hideTwitterButton: true, showTwitterButton: showNav }"
             :window-features="windowFeatures"
             :share-options="shareOptions"
             :use-native-behavior="useNativeBehavior"
@@ -33,6 +33,9 @@
     name: 'STwitterSharing',
 
     components: { STwitter },
+        props: {
+            showNav: Boolean
+        },
         data: function () {
             return {
                 hideNav: false,

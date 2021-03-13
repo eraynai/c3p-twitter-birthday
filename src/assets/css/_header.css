@@ -7,7 +7,8 @@
     color: white;
     padding: 2rem;
     transition: 0.3s ease;
-    opacity: 0;
+    opacity: 1;
+    justify-content: space-between;
 }
 
 #main-header {
@@ -21,8 +22,8 @@
     z-index: 9999;
     display: flex;
 }
-#main-header.show #logo{
-    opacity: 1;
+#twitterhastag.hidden {
+    opacity: 0;
     display: block;
 }
 
@@ -53,6 +54,6 @@
 }
 
 #main-header #header--tweet-cta {
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s ease;
 }   

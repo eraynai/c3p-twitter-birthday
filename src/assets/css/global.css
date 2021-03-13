@@ -34,6 +34,10 @@ html {
 body {
     box-sizing: border-box;
     background-color: #0e141c;
+    background-image: url('../images/background-image-2-v2.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: top right;
 
 }
 
@@ -52,7 +56,6 @@ body {
     /*padding-top: 140px;*/
    
     padding-top: 100px;
-    padding-bottom: 170px;
 }
 
 .cta-section {
@@ -62,12 +65,6 @@ body {
     padding: 83px 0;
 }
 
-.inner-background{
-    background-image: url('../images/background-image-2-v2.png');
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: right;
-}
 
 .inner-background-cta {
     background-image: url('../images/background-image-cta.png');
@@ -76,6 +73,21 @@ body {
     background-position: center;*/
     background-size: cover;
     background-position: center center;
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+
+
+
+#logo span {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -146,16 +158,14 @@ body {
         padding: 37px 0;
     }
 
-    .hero-content-2 {
+    /*.hero-content-2 {
         padding: 71px 17px 35.7px;
         
-    }
+    }*/
     
-    .hero-content-2 h2 {
-        font-size: 25.9px;
-        line-height: 30.2px;
-        text-align: center;
-        font-weight: 600;
+    .hero-content-2 p {
+        font-size: 14px;
+        line-height: 23px;
     }
 
     #sup-happy-big {
@@ -164,6 +174,10 @@ body {
 
     .cta-section.wrapper {
         margin-top: 34px;
+    }
+
+    .heroContent-2.wrapper {
+        padding-top: 3.5rem;
     }
 }
 

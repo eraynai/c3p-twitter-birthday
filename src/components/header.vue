@@ -1,13 +1,10 @@
 <template>
-    <header id="main-header" :class="{ show: showNav }">
-    <div class="background">
-        <div class="inner">
+    <header>
+    <!--<div class="background">-->
+        <div class="nav wrapper">
             <div id="logo">
-                <div>
-                    <span>#GrowUpTwitter</span>
-                </div>
-            </div>
-            <s-twitter
+                <span id="twitterhastag" :class="{ hidden: hideNav }">#GrowUpTwitter</span>
+                <s-twitter :class="{ show: shouldShow }"
             :window-features="windowFeatures"
             :share-options="shareOptions"
             :use-native-behavior="useNativeBehavior"
@@ -17,8 +14,11 @@
             @popup-focus="onFocus">
             <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
             </s-twitter>
+                
+            </div>
+            
         </div>
-    </div>
+    <!--<div>-->
     </header>
 </template>
 
@@ -35,7 +35,7 @@
     components: { STwitter },
         data: function () {
             return {
-                showNav: false,
+                hideNav: false,
                 playerReady: false,
                 windowFeatures: {},
                 shareOptions: {
@@ -48,12 +48,13 @@
             };
         },
         mounted() {
-            this.showHideNav();
+            /*this.showHideNav();*/
             window.addEventListener("scroll", this.showHideNav);
         },
         methods: {
             showHideNav() {
-                this.showNav = window.pageYOffset > window.innerHeight ? true : false;
+                this.hideNav = true;
+                console.log('are you running');
             },
             onClose(){},
             onOpen(){},
@@ -61,4 +62,5 @@
             onFocus(){},
         }
     }
+
 </script>

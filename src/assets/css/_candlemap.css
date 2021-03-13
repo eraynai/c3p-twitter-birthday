@@ -2,9 +2,20 @@
 /* !CANDLEMAP */
 
 .hero-content-2 {
-    color: #00acee;
-    font-size: 3.6rem;
-    font-family: rift, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.hero-content-2  p{
+    color: #fff;
+    font-family: quatro, sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.video {
+    height: 40vh;
 }

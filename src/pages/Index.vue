@@ -3,6 +3,7 @@
     <Header />
     <main>
       <HappyBirthday />
+      <PageFold />
       <CallToAction />
       <CandleMap />
     </main>
@@ -17,6 +18,7 @@ import HappyBirthday          from "~/components/happybirthdayvideo.vue";
 import CandleMap              from "~/components/candlemap.vue";
 import Footer                 from "~/components/footer.vue";
 import CallToAction           from "~/components/calltoaction.vue";
+import PageFold               from "~/components/pagefold.vue";
 
 export default {
   metaInfo: {
@@ -25,6 +27,7 @@ export default {
   components: {
     Header,
     HappyBirthday,
+    PageFold,
     CallToAction,
     CandleMap,
     Footer

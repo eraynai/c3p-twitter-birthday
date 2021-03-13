@@ -1,5 +1,4 @@
 <template>
-    <h1>Test</h1>
 </template>
 
 <style>
@@ -26,6 +25,8 @@
                 }
             });
             observer.observe(this.$el);
+
+            //observer.observe(this.refs.myVideo.$el)
         }
     }
 </script>

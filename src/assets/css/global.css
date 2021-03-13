@@ -4,8 +4,6 @@
 @import '_candlemap.css';
 @import '_footer.css';
 @import '_calltoaction.css';
-@import '_proudtwitter.css';
-
 
 /* =========================================================== */
 /* !GLOBAL */
@@ -51,14 +49,17 @@ body {
     /*height: 85vh;*/
     display: flex;
     align-items: center;
-    padding-top: 140px;
-    padding-bottom: 50px;
+    /*padding-top: 140px;*/
+   
+    padding-top: 100px;
+    padding-bottom: 170px;
 }
 
 .cta-section {
-    height: 44vh;
+    height: auto;
     display: flex;
     align-items: center;
+    padding: 83px 0;
 }
 
 .inner-background{
@@ -70,9 +71,11 @@ body {
 
 .inner-background-cta {
     background-image: url('../images/background-image-cta.png');
-    background-size: 100%;
+    /*background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
+    background-size: cover;
+    background-position: center center;
 }
 
 
@@ -81,6 +84,12 @@ body {
 
 }
 @media (max-width: 768px) {
+
+    .hero {
+        padding-top: 50px;
+        padding-bottom: 90px;
+
+    }
     .inner-background {
         background-size: cover;
         background-position: 42vw center;
@@ -146,7 +155,15 @@ body {
         font-size: 25.9px;
         line-height: 30.2px;
         text-align: center;
-        font-weight: 500;
+        font-weight: 600;
+    }
+
+    #sup-happy-big {
+        line-height: 1.0;
+    }
+
+    .cta-section.wrapper {
+        margin-top: 34px;
     }
 }
 

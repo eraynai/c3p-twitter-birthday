@@ -5,6 +5,7 @@
       <HappyBirthday @passedFold="showNav=true" />
       <CallToAction />
       <CandleMap />
+      <CandleVideo />
     </main>
     <Footer />
   </Layout>
@@ -17,6 +18,7 @@ import HappyBirthday          from "~/components/happybirthdayvideo.vue";
 import CandleMap              from "~/components/candlemap.vue";
 import Footer                 from "~/components/footer.vue";
 import CallToAction           from "~/components/calltoaction.vue";
+import CandleVideo            from "~/components/videocandlemap.vue";
 
 export default {
   metaInfo: {
@@ -27,6 +29,7 @@ export default {
     HappyBirthday,
     CallToAction,
     CandleMap,
+    CandleVideo,
     Footer
   },
   data: function () {

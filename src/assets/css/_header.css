@@ -43,6 +43,10 @@
     transition: 2s ease;
 }
 
+.hideTranslation {
+    display: none;
+}
+
 .hideTwitterButton {
     opacity: 0;
     

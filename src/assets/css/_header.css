@@ -62,6 +62,9 @@
     margin-right: 7.2rem
 }
 
+.selectedLanguage {
+    text-decoration: underline;
+}
 
 
 @media screen and  (max-width: 480px) {

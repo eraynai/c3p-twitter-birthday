@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Header :showNav="showNav" />
+    <Header :showNav="showNav" :englishSelected="englishSelected" />
     <main>
       <HappyBirthday @passedFold="showNav=true" />
       <CallToAction />
@@ -20,6 +20,7 @@ import Footer                 from "~/components/footer.vue";
 import CallToAction           from "~/components/calltoaction.vue";
 import CandleVideo            from "~/components/videocandlemap.vue";
 
+
 export default {
   metaInfo: {
     title: "Home"
@@ -34,7 +35,8 @@ export default {
   },
   data: function () {
     return {
-      showNav: false
+      showNav: false,
+      englishSelected: true
     };
   },
 }

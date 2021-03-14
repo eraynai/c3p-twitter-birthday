@@ -13,7 +13,10 @@
                     @popup-focus="onFocus">
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
                 </s-twitter>
-                <button id="translation" :class="{ hideTranslation: showNav }">EN/FR</button>
+                <span :class="{ hideTranslation: showNav }">
+                    <a href="#" :class="{ selectedLanguage: englishSelected }" @:click="englishSelected=true">ENG</a>/
+                    <a href="#" :class="{ selectedLanguage: !englishSelected }"  @:click="englishSelected=false">FR</a>
+                </span>
             </div>
         </div>   
     </header>
@@ -31,7 +34,8 @@
 
     components: { STwitter },
         props: {
-            showNav: Boolean
+            showNav: Boolean,
+            englishSelected: Boolean
         },
         data: function () {
             return {
@@ -50,6 +54,7 @@
         mounted() {
             /*this.showHideNav();*/
             window.addEventListener("scroll", this.showHideNav);
+            //this.englishSelected = true;
         },
         methods: {
             showHideNav() {

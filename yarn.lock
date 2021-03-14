@@ -1337,6 +1337,11 @@ acorn@^6.4.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
   integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
+
 address@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/address/-/address-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
@@ -4191,6 +4196,14 @@ graphql@^14.4.2:
   integrity sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA==
   dependencies:
     iterall "^1.2.2"
+
+gridsome-plugin-i18n@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-i18n/-/gridsome-plugin-i18n-1.6.0.tgz#6bb1456fa60a1be856a7bd0a04bea41f753db3e0"
+  integrity sha512-p7jNEk5RwhQlAVMPZyCvw7HxrheRfbXf7w4wXm0NJdxj9FD9r61voEDVlUGirdt+Rt2lJ5HDowzg3qsumnWM6w==
+  dependencies:
+    core-js "^3.6.4"
+    vue-i18n "^8.15.5"
 
 gridsome@^0.7.0:
   version "0.7.23"
@@ -8704,6 +8717,16 @@ vue-hot-reload-api@^2.3.0:
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
 
+vue-i18n@^8.15.5:
+  version "8.24.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.24.1.tgz#c3582bd61bb3a978f00c75e1ac850efc89b3916f"
+  integrity sha512-iqM+npjvI9SGOAYkw1Od/y4O74gpvn5WOHeb3K125TmDJssvR62tDMMLIasPmKNbePZ1BMZ6d5jOBsrB/cK8Lw==
+
+vue-intersect@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/vue-intersect/-/vue-intersect-1.1.6.tgz#2c349354bcf9221a006636cbe3f657f8e1282c1d"
+  integrity sha512-m9K48wkti8K0no0F8QdiShukenLDg80JS246Lf7QWgI0XOHkBkzn921FCwLtb49Jj14KK8itVZw4iOVxPc/PsA==
+
 vue-loader@^15.7.1:
   version "15.9.6"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.9.6.tgz#f4bb9ae20c3a8370af3ecf09b8126d38ffdb6b8b"
@@ -9003,6 +9026,11 @@ yaml-loader@^0.5.0:
   integrity sha512-p9QIzcFSNm4mCw/m5NdyMfN4RE4aFZJWRRb01ERVNGCym8VNbKtw3OYZXnvUIkim6U/EjqE/2yIh9F/msShH9A==
   dependencies:
     js-yaml "^3.5.2"
+
+yarn@^1.22.10:
+  version "1.22.10"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.10.tgz#c99daa06257c80f8fa2c3f1490724e394c26b18c"
+  integrity sha512-IanQGI9RRPAN87VGTF7zs2uxkSyQSrSPsju0COgbsKQOOXr5LtcVPeyXWgwVa0ywG3d8dg6kSYKGBuYK021qeA==
 
 yauzl@^2.4.2:
   version "2.10.0"

@@ -33,7 +33,7 @@ export default {
     CandleVideo,
     Footer
   },
-  data: function () {
+  data() {
     return {
       showNav: false,
       englishSelected: true

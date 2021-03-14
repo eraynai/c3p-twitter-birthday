@@ -14,11 +14,10 @@
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
                 </s-twitter>
                 <span :class="{ hideTranslation: showNav }">
-                    <a href="#" :class="{ selectedLanguage: englishSelected }" @:click="englishSelected=true">ENG</a>/
-                    <a href="#" :class="{ selectedLanguage: !englishSelected }"  @:click="englishSelected=false">FR</a>
+                    <button v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </button>
                 </span>
             </div>
-        </div>   
+        </div>
     </header>
 </template>
 
@@ -37,7 +36,7 @@
             showNav: Boolean,
             englishSelected: Boolean
         },
-        data: function () {
+        data() {
             return {
                 hideNav: false,
                 playerReady: false,
@@ -47,9 +46,15 @@
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 hashtags: ['test', 'me'],
                 via: 'twitterdev',
+                currentLocale: this.$i18n.locale.toString()
             },
             useNativeBehavior: true,
             };
+        },
+        computed: {
+            availableLocales() {
+                return this.$i18n.availableLocales;
+            }
         },
         mounted() {
             /*this.showHideNav();*/
@@ -65,6 +70,12 @@
             onOpen(){},
             onBlock(){},
             onFocus(){},
+            switchLocale(locale) {
+                this.currentLocale = locale;
+                this.$router.push({
+                    path: this.$tp(this.$route.path, this.currentLocale, true)
+                })
+            }
         }
     }
 

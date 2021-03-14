@@ -11,20 +11,20 @@ module.exports = {
       use: "gridsome-plugin-i18n",
       options: {
         locales: [ // locales list
-          'fr-fr',
-          'english'
+          'FR',
+          'ENG'
         ],
         pathAliases: { // path segment alias for each locales
-          'fr-fr': 'fr',
-          'english': 'e'
+          'FR': 'fr',
+          'ENG': 'en'
         },
-        fallbackLocale: 'english', // fallback language
-        defaultLocale: 'english', // default language
+        fallbackLocale: 'eng-gb', // fallback language
+        defaultLocale: 'eng-gb', // default language
         enablePathRewrite: true, // rewrite path with locale prefix, default: true
         rewriteDefaultLanguage: true, // rewrite default locale, default: true
         messages: {
-          'fr-fr': require('./src/locales/fr-fr.json'),
-          'english': require('./src/locales/en-gb.json'),
+          'FR': require('./src/locales/fr-fr.json'),
+          'ENG': require('./src/locales/en-gb.json'),
         }
       }
     }

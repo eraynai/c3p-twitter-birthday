@@ -89,6 +89,9 @@ body {
     font-weight: 500;
 }
 
+.heroContent-2.wrapper {
+    padding-top: 10rem;
+}
 
 /*New styles*/
 @media screen and (max-width: 920px) and (min-width: 769px){
@@ -163,8 +166,8 @@ body {
     }*/
     
     .hero-content-2 p {
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 25.9px;
+        line-height: 30.2px;
     }
 
     #sup-happy-big {
@@ -176,7 +179,7 @@ body {
     }
 
     .heroContent-2.wrapper {
-        padding-top: 3.5rem;
+        padding-top: 6rem;
     }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Header :showNav="showNav" :englishSelected="englishSelected" />
+    <Header :showNav="showNav" />
     <main>
       <HappyBirthday @passedFold="showNav=true" />
       <CallToAction />
@@ -36,7 +36,6 @@ export default {
   data() {
     return {
       showNav: false,
-      englishSelected: true
     };
   },
 }

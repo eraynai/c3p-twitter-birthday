@@ -12,19 +12,19 @@ module.exports = {
       options: {
         locales: [ // locales list
           'fr-fr',
-          'en-gb'
+          'english'
         ],
         pathAliases: { // path segment alias for each locales
           'fr-fr': 'fr',
-          'en-gb': 'en'
+          'english': 'e'
         },
-        fallbackLocale: 'en-gb', // fallback language
-        defaultLocale: 'en-gb', // default language
+        fallbackLocale: 'english', // fallback language
+        defaultLocale: 'english', // default language
         enablePathRewrite: true, // rewrite path with locale prefix, default: true
         rewriteDefaultLanguage: true, // rewrite default locale, default: true
         messages: {
           'fr-fr': require('./src/locales/fr-fr.json'),
-          'en-gb': require('./src/locales/en-gb.json'),
+          'english': require('./src/locales/en-gb.json'),
         }
       }
     }

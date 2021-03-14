@@ -62,8 +62,13 @@
     margin-right: 7.2rem
 }
 
+.languageOption {
+    color: white;
+    text-decoration: none;
+}
+
 .selectedLanguage {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 

@@ -14,7 +14,11 @@
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
                 </s-twitter>
                 <span :class="{ hideTranslation: showNav }">
-                    <button v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </button>
+                    <a
+                        href="#"
+                        v-for="locale in availableLocales"
+                        v-bind:class="{selectedLanguage: shareOptions.currentLocale === locale, languageOption: true}"
+                        :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
                 </span>
             </div>
         </div>
@@ -71,7 +75,7 @@
             onBlock(){},
             onFocus(){},
             switchLocale(locale) {
-                this.currentLocale = locale;
+                this.shareOptions.currentLocale = locale;
                 this.$router.push({
                     path: this.$tp(this.$route.path, this.currentLocale, true)
                 })

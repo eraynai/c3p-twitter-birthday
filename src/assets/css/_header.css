@@ -22,18 +22,43 @@
     display: block;
 }
 
+.nav.hideNavBar {
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    height: 6rem;
+}
+
+.nav.showNavBar {
+    background-color: #0e141c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    height: 6rem;
+    transition: 2s ease;
+}
+
 .hideTwitterButton {
     opacity: 0;
+    
 }
 
 .showTwitterButton {
     opacity: 1;
+    transition: 2s ease;
 }
 
 #main-header.show #header--tweet-cta{
     opacity: 1;
     margin-right: 7.2rem
 }
+
+
 
 @media screen and  (max-width: 480px) {
     #main-header > .inner {

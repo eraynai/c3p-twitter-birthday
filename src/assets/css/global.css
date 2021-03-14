@@ -34,10 +34,6 @@ html {
 body {
     box-sizing: border-box;
     background-color: #0e141c;
-    background-image: url('../images/background-image-2-v2.png');
-    background-size: 55%;
-    background-repeat: no-repeat;
-    background-position: top right;
 
 }
 
@@ -54,7 +50,7 @@ body {
     display: flex;
     align-items: center;
     /*padding-top: 140px;*/
-   
+    /*padding-bottom: 170px;*/
     padding-top: 100px;
 }
 
@@ -63,8 +59,15 @@ body {
     display: flex;
     align-items: center;
     padding: 83px 0;
+    margin-top: 10.1rem;
 }
 
+.inner-background{
+    background-image: url('../images/background-image-2-v2.png');
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
 
 .inner-background-cta {
     background-image: url('../images/background-image-cta.png');
@@ -75,19 +78,15 @@ body {
     background-position: center center;
 }
 
-.nav {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 9999;
-}
 
 
 
 #logo span {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-size: 14px;
+    font-family: quatro, sans-serif;
+    font-weight: 500;
 }
 
 
@@ -99,7 +98,7 @@ body {
 
     .hero {
         padding-top: 50px;
-        padding-bottom: 90px;
+        /*padding-bottom: 90px;*/
 
     }
     .inner-background {

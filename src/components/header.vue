@@ -1,9 +1,8 @@
 <template>
     <header>
-    <!--<div class="background">-->
-        <div class="nav wrapper">
-            <div id="logo">
-                <span id="twitterhastag" :class="{ hidden: hideNav && !showNav }">#GrowUpTwitter</span>
+            <div class="nav wrapper" :class="{ hideNavBar: true, showNavBar: showNav }">
+            <div id="logo" >
+                <span id="twitterhastag" :class="{ hidden: hideNav && !showNav }">#TwitterBirthdayBash</span>
                 <s-twitter :class="{ hideTwitterButton: true, showTwitterButton: showNav }"
             :window-features="windowFeatures"
             :share-options="shareOptions"
@@ -17,8 +16,8 @@
                 
             </div>
             
-        </div>
-    <!--<div>-->
+            </div>
+        </div>    
     </header>
 </template>
 

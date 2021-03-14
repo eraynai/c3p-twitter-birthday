@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-background">
+     <div class="inner-background">
       <section class="hero wrapper">
     <!-- Note that we use a `ref` attribute, not an `id`, to reference the iframe . The iframe src needs the enablejsapi flag as well, so that we can actually use the iFrame API.
       It's also important that the iframe allows autoplay, or else the video will not play in some browsers -->
@@ -40,6 +40,7 @@
       <g-image src="~/assets/images/play_button.png" alt="play button" />
     </button>-->
     </div>
+    
     </section>
     <PageFold @passedFold="$emit('passedFold')"/>
     </div>

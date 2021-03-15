@@ -14,7 +14,7 @@
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
                 </s-twitter>
                 <span :class="{ hideTranslation: showNav }">
-                     <button v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </button>
+                     <a href="#" class="lang-link" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
                 </span>
             </div>
         </div>
@@ -24,9 +24,6 @@
 <script>
 
     import { STwitter } from 'vue-socials'
-    import { gsap } from "gsap";
-    import { ScrollTrigger } from "gsap/ScrollTrigger";
-    gsap.registerPlugin(ScrollTrigger);
 
     export default {
     name: 'STwitterSharing',

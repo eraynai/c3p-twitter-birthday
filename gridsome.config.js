@@ -12,11 +12,11 @@ module.exports = {
       options: {
         locales: [ // locales list
           'FR',
-          'ENG'
+          'ENG/'
         ],
         pathAliases: { // path segment alias for each locales
           'FR': 'fr',
-          'ENG': 'en'
+          'ENG/': 'en'
         },
         fallbackLocale: 'eng-gb', // fallback language
         defaultLocale: 'eng-gb', // default language
@@ -24,7 +24,7 @@ module.exports = {
         rewriteDefaultLanguage: true, // rewrite default locale, default: true
         messages: {
           'FR': require('./src/locales/fr-fr.json'),
-          'ENG': require('./src/locales/en-gb.json'),
+          'ENG/': require('./src/locales/en-gb.json'),
         }
       }
     }

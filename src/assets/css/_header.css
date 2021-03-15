@@ -29,7 +29,6 @@
     left: 0px;
     right: 0px;
     z-index: 9999;
-    height: 6rem;
 }
 
 
@@ -64,9 +63,10 @@
 }
 
 a.logo-container.hideTwitterButton.showTwitterButton {
-    width: 40%;
+    width: 37%;
     /* height: 215px; */
     display: flex;
+    height: 100%;
 }
 
 .header-wrapper.showNavBar {

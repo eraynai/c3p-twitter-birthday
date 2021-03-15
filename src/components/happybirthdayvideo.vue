@@ -29,7 +29,7 @@
         </div>
       </div>
   
-  
+ 
     <!--<g-image src="~/assets/images/play_button.png" alt="play button" />-->
     
     

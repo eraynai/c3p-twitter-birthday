@@ -223,21 +223,20 @@ div#app {
 
     #header--tweet-cta {
         width: 100%;
-        padding: 1rem;
     }
 
     div#app {
         padding-top: 6rem;
     }
     
-    
+    a.logo-container.hideTwitterButton.showTwitterButton {
+        width: 45%;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-    #header--tweet-cta {
-        padding: 1.5rem;
- }
+   
 
 }
 

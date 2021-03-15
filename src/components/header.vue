@@ -11,7 +11,7 @@
                     @popup-open="onOpen"
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/button-tweet.svg' alt='twitter button'/>
+                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_change.png' alt='tweet for change'/>
                 </s-twitter>
                 <!--<span :class="{ hideTranslation: showNav }">
                      <a href="#" class="languageOption" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>

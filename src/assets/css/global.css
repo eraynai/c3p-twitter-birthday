@@ -38,6 +38,10 @@ body {
 
 }
 
+div#app {
+    padding-top: 6rem;
+}
+
 .wrapper {
     width: 89%;
     max-width: 1280px;
@@ -193,7 +197,13 @@ body {
     }
 
     .terms ul {
-        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .terms ul a {
+    
+        margin-left: 4rem;
+        margin: 0;
     }
 
     .cp3-logo.g-image.g-image--lazy.g-image--loaded {
@@ -203,6 +213,7 @@ body {
 
     .terms {
         padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     footer.footerContent.wrapper {
@@ -212,6 +223,7 @@ body {
     #header--tweet-cta {
         width: 100%;
     }
+    
     
 }
 

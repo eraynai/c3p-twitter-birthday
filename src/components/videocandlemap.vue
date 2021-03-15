@@ -3,7 +3,7 @@
     <div style="position: relative;">
         <g-image v-if="!isPlaying" src='~/assets/images/button-play.svg' alt='play button' class="ui" @click="play"/>
         <vue-intersect @enter="play" >
-            <video class="birthday-video" ref="video" autoplay loop>
+            <video id="b-video" class="birthday-video" ref="video" autoplay muted loop>
                 <source src="/cake_video.mp4" type="video/mp4">
             </video>
         </vue-intersect>
@@ -25,12 +25,13 @@ export default {
     mounted () {
         this.$refs.video.addEventListener('play', () => {
             this.isPlaying = true;
-            console.log('video is playing')
+            console.log('video is playing');
         })
     },
     methods: {
-        play() {
-            this.$refs.video.play();
+        async play() {
+            await this.$refs.video.play();
+            console.log('playing video here', this.$refs.video);
         }
     }
 }

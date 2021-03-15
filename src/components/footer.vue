@@ -1,7 +1,7 @@
 <template>
-    <div class="wrapperWide">
-    <footer class="footerContent wrapper">
-    <div class="container"> 
+    
+    <footer class="footerContent">
+    <div class="container wrapper"> 
         <div class="social-logos">
             <g-image class="cp3-logo" src="~/assets/images/c-3-p-logo.svg" alt="c3p logo" />
             <div class="social">
@@ -20,5 +20,4 @@
          </div>
     </div>
     </footer>
-    </div>
 </template>

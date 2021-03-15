@@ -22,7 +22,7 @@
     display: block;
 }
 
-.nav.hideNavBar {
+.header-wrapper.hideNavBar {
 
     position: fixed;
     top: 0px;
@@ -32,16 +32,7 @@
     height: 6rem;
 }
 
-.nav.showNavBar {
-    background-color: #0e141c;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 9999;
-    height: 6rem;
-    transition: 2s ease;
-}
+
 
 .hideTranslation {
     display: none;
@@ -72,7 +63,23 @@
     text-decoration: underline !important;
 }
 
+a.logo-container.hideTwitterButton.showTwitterButton {
+    width: 40%;
+    /* height: 215px; */
+    display: flex;
+}
 
+.header-wrapper.showNavBar {
+
+    background-color: #0e141c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    transition: 2s ease;
+    height: 6rem;
+}
 
 @media screen and  (max-width: 480px) {
     #main-header > .inner {
@@ -92,7 +99,7 @@
 }
 
 .cta {
-    width: 40rem;
+    width: 100%
 }
 
 #main-header #header--tweet-cta {

@@ -1,9 +1,9 @@
 <template>
-    <header>
-        <div class="nav wrapper" :class="{ hideNavBar: true, showNavBar: showNav }">
+    <header class="header-wrapper" :class="{ hideNavBar: true, showNavBar: showNav }">
+            <div class="nav wrapper">
             <div id="logo" >
                 <span id="twitterhastag" :class="{ hidden: hideNav && !showNav }">#TwitterBirthdayBash</span>
-                <s-twitter :class="{ hideTwitterButton: true, showTwitterButton: showNav }"
+                <s-twitter class="logo-container" :class="{ hideTwitterButton: true, showTwitterButton: showNav }"
                     :window-features="windowFeatures"
                     :share-options="shareOptions"
                     :use-native-behavior="useNativeBehavior"
@@ -11,13 +11,13 @@
                     @popup-open="onOpen"
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
+                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/button-tweet.svg' alt='twitter button'/>
                 </s-twitter>
                 <span :class="{ hideTranslation: showNav }">
                      <a href="#" class="languageOption" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
                 </span>
             </div>
-        </div>
+            </div>
     </header>
 </template>
 

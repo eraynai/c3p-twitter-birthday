@@ -1,11 +1,11 @@
 /* =========================================================== */
 /* !FOOTER */
 
-.wrapperWide {
+/*.wrapperWide {
 
     background: black;
     height: 16rem;
-}
+}*/
 
 
 
@@ -14,9 +14,10 @@
     justify-content: space-between;
 }
 
-.g-image.g-image--lazy.g-image--loaded {
-    margin-left: 2.3rem;
+.social a:first-child .g-image.g-image--lazy.g-image--loaded{
+    margin-left: 0;
 }
+
 
 .cp3-logo.g-image.g-image--lazy.g-image--loaded {
     margin-left: 0;
@@ -24,10 +25,14 @@
 
 .social {
     margin-top: 2rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .terms {
     padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .terms ul a {
@@ -43,8 +48,6 @@
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    flex-shrink: 0;
-    flex-flow: row nowrap;
 
 }
 
@@ -52,6 +55,8 @@
     padding-top: 3rem;
 }
 
-footer.footerContent.wrapper {
+footer.footerContent {
     margin-top: 16rem;
+    background: black;
 }
+

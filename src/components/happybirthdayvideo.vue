@@ -19,13 +19,13 @@
             src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='thumb'
             class="play-image" :class="{ hidden: videoPlaying }"/>
           </button>
-          <!--<iframe
+          <iframe
             ref="ytplayer"
             width="560"
             height="315"
             frameborder="0"
             src="https://www.youtube-nocookie.com/embed/ppp5Q70PYPU?enablejsapi=1"
-          ></iframe>-->
+          ></iframe>
         </div>
       </div>
   

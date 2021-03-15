@@ -14,7 +14,7 @@
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet_button.png' alt='twitter button'/>
                 </s-twitter>
                 <span :class="{ hideTranslation: showNav }">
-                     <a href="#" class="lang-link" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
+                     <a href="#" class="languageOption" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
                 </span>
             </div>
         </div>
@@ -31,7 +31,7 @@
     components: { STwitter },
         props: {
             showNav: Boolean,
-            englishSelected: Boolean
+            englishSelected: Boolean,
         },
         data() {
             return {
@@ -43,7 +43,8 @@
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 hashtags: ['test', 'me'],
                 via: 'twitterdev',
-                currentLocale: this.$i18n.locale.toString()
+                currentLocale: this.$i18n.locale.toString(),
+                
             },
             useNativeBehavior: true,
             };

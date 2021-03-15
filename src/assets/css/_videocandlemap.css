@@ -1,0 +1,10 @@
+.birthday-video {
+    width: 100%;
+    max-width: 1200px;
+}
+
+secondVideo.wrapper {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}

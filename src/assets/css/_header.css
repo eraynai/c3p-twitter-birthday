@@ -65,11 +65,13 @@
 .languageOption {
     color: white;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .selectedLanguage {
     text-decoration: underline !important;
 }
+
 
 
 @media screen and  (max-width: 480px) {

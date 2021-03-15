@@ -3,7 +3,7 @@
     max-width: 1200px;
 }
 
-secondVideo.wrapper {
+.secondVideo.wrapper {
     margin-top: 7rem;
     display: flex;
     justify-content: center;

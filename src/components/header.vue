@@ -40,9 +40,9 @@
                 windowFeatures: {},
                 shareOptions: {
                 url: 'https://www.youtube.com/watch?v=ppp5Q70PYPU&t=1s',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                hashtags: ['test', 'me'],
-                via: 'twitterdev',
+                text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
+                hashtags: ['TwitterBirthdayBash'],
+                //via: 'twitterdev',
                 currentLocale: this.$i18n.locale.toString(),
                 
             },

@@ -51,7 +51,7 @@
                     @popup-open="onOpen"
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/button-tweet_v2.svg' alt='tweet for change'/>
+                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/CTA.png' alt='tweet for change'/>
          </s-twitter>
       </div>
     

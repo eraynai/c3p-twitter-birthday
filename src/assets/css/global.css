@@ -228,11 +228,21 @@ body {
     }
     
     a.logo-container.hideTwitterButton.showTwitterButton {
-        width: 45%;
+        width: 65%;
     }
 
     a.logo-container {
-        width: 45%;
+        width: 65%;
+    }
+
+    #logo span {
+
+        font-size: 11px;
+    }
+
+    footer.footerContent {
+        margin-top: 5rem;
+        background: black;
     }
 }
 

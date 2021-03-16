@@ -10,7 +10,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-gtm',
       options: {
-        id: '',
+        id: 'GTM-KGMWRKH',
         enabled: true,
         loadScript: true,
       }

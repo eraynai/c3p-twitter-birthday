@@ -1,16 +1,15 @@
 <template>
      <div class="inner-background">
-      <section class="hero wrapper">
-    <!-- Note that we use a `ref` attribute, not an `id`, to reference the iframe . The iframe src needs the enablejsapi flag as well, so that we can actually use the iFrame API.
-      It's also important that the iframe allows autoplay, or else the video will not play in some browsers -->
-    <div class="hero-content" :class="{ hidden: videoPlaying }">
+        <section class="hero wrapper">
+    
+        <div class="hero-content" :class="{ hidden: videoPlaying }">
           <!--<g-image src='~/assets/images/background-image-2.png' alt='thumb' class="back-image"/>-->
           <h1>Happy 15<sup id="sup-happy-big">th</sup><br> birthday,</br><span id="blue-twitter">twitter</span></h1>
           <p>We wish you'd do more to protect</br> victims of child sexual abuse on</br> your platform.</p>
           </div>
   
-      <div id="video-section">
-      <div class="video-size">
+        <div id="video-section">
+        <div class="video-size">
         <div class="video-wrapper">
           <button @click="play" :disabled="!playerReady">
             <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
@@ -29,18 +28,7 @@
           ></iframe>
         </div>
         <PageFold @passedFold="passFold()"/>
-      <div class="position-container">
-       <s-twitter class="logo-container" :class="{ hideTwitterButton2: showNav1 }"
-                    :window-features="windowFeatures"
-                    :share-options="shareOptions"
-                    :use-native-behavior="useNativeBehavior"
-                    @popup-close="onClose"
-                    @popup-open="onOpen"
-                    @popup-block="onBlock"
-                    @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/button-tweet_v2.svg' alt='tweet for change'/>
-         </s-twitter>
-      </div>
+      
       </div>
  
     <!--<g-image src="~/assets/images/play_button.png" alt="play button" />-->
@@ -54,6 +42,18 @@
     </div>
     
     </section>
+    <div class="position-container wrapper">
+       <s-twitter class="logo-container" :class="{ hideTwitterButton2: showNav1 }"
+                    :window-features="windowFeatures"
+                    :share-options="shareOptions"
+                    :use-native-behavior="useNativeBehavior"
+                    @popup-close="onClose"
+                    @popup-open="onOpen"
+                    @popup-block="onBlock"
+                    @popup-focus="onFocus">
+                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/button-tweet_v2.svg' alt='tweet for change'/>
+         </s-twitter>
+      </div>
     
     </div>
 </template>

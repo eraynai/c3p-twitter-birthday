@@ -70,11 +70,11 @@ a.logo-container.hideTwitterButton.showTwitterButton {
     height: 100%;
 }
 
-.logo-container {
-    width: 41%;
+a.logo-container {
+    width: 37%;
     /* height: 215px; */
     display: flex;
-    height: 100%;
+    
 }
 
 .position-container {

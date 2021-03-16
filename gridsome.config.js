@@ -8,6 +8,14 @@ module.exports = {
   siteName: 'C3P Twitter Birthday',
   plugins: [
     {
+      use: 'gridsome-plugin-gtm',
+      options: {
+        id: '',
+        enabled: true,
+        loadScript: true,
+      }
+    },
+    {
       use: "gridsome-plugin-i18n",
       options: {
         locales: [ // locales list

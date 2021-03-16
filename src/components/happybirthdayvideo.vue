@@ -24,7 +24,7 @@
             height="315"
             allow="autoplay"
             frameborder="0"
-            src="https://www.youtube.com/embed/_I_Z7qaRzec?enablejsapi=1"
+            src="https://www.youtube.com/embed/N_n4gIxv0YI?enablejsapi=1"
           ></iframe>
         </div>
         <PageFold @passedFold="passFold()"/>
@@ -73,7 +73,7 @@ export default {
       videoPlaying: false,
       windowFeatures: {},
       shareOptions: {
-      url: 'https://www.youtube.com/watch?v=ppp5Q70PYPU&t=1s',
+      url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
       text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
       hashtags: ['TwitterBirthdayBash'],      
     },

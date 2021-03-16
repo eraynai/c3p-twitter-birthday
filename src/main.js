@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/css/global.css'
+import VueGtag from "vue-gtag"
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
@@ -11,5 +12,9 @@ export default function (Vue, { router, head, isClient }) {
   head.link.push({
     rel:'stylesheet',
     href: 'https://use.typekit.net/epg5rsz.css'
-  })
+  });
+
+  Vue.use(VueGtag, {
+    config: { id: "UA-143256811-2" }
+  });
 }

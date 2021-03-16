@@ -44,8 +44,8 @@
 }
 
 .showTwitterButton {
-    opacity: 1;
-    transition: 2s ease;
+    opacity: 1  !important;
+    transition: 1s ease;
 }
 
 #main-header.show #header--tweet-cta{
@@ -70,6 +70,18 @@ a.logo-container.hideTwitterButton.showTwitterButton {
     height: 100%;
 }
 
+.logo-container {
+    width: 41%;
+    /* height: 215px; */
+    display: flex;
+    height: 100%;
+}
+
+.position-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header-wrapper.showNavBar {
 
     background-color: #0e141c;
@@ -81,7 +93,7 @@ a.logo-container.hideTwitterButton.showTwitterButton {
     transition: 2s ease;
 }
 
-@media screen and  (max-width: 480px) {
+/*@media screen and  (max-width: 480px) {
     #main-header > .inner {
         max-width: 860px;
         width: 860px;
@@ -96,7 +108,7 @@ a.logo-container.hideTwitterButton.showTwitterButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+}*/
 
 .cta {
     width: 100%

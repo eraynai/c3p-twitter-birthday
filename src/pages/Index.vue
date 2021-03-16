@@ -2,7 +2,7 @@
   <Layout>
     <Header :showNav="showNav" />
     <main>
-      <HappyBirthday @passedFold="showNav=true" />
+      <HappyBirthday @passedFold="showNav=true" v-bind:showNav1="showNav" />
       <CallToAction />
       <CandleMap />
       <CandleVideo />

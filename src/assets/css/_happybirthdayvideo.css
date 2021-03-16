@@ -36,7 +36,9 @@
     transition: 1s ease;
 }
 
-
+.hideTwitterButton2 {
+    opacity:0;
+}
 
 .play-image.hidden, .ui.hidden, .watch-now-text.hidden, .hero-content.hidden {
     opacity: 0;

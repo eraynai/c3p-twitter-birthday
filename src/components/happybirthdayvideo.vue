@@ -23,12 +23,25 @@
             ref="ytplayer"
             width="560"
             height="315"
+            allow="autoplay"
             frameborder="0"
-            src="https://www.youtube-nocookie.com/embed/ppp5Q70PYPU?enablejsapi=1"
+            src="https://www.youtube.com/embed/_I_Z7qaRzec?enablejsapi=1"
           ></iframe>
         </div>
+        <PageFold @passedFold="passFold()"/>
+      <div class="position-container">
+       <s-twitter class="logo-container" :class="{ hideTwitterButton2: showNav1 }"
+                    :window-features="windowFeatures"
+                    :share-options="shareOptions"
+                    :use-native-behavior="useNativeBehavior"
+                    @popup-close="onClose"
+                    @popup-open="onOpen"
+                    @popup-block="onBlock"
+                    @popup-focus="onFocus">
+                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/button-tweet_v2.svg' alt='tweet for change'/>
+         </s-twitter>
       </div>
-  
+      </div>
  
     <!--<g-image src="~/assets/images/play_button.png" alt="play button" />-->
     
@@ -41,20 +54,30 @@
     </div>
     
     </section>
-    <PageFold @passedFold="$emit('passedFold')"/>
+    
     </div>
 </template>
 
 <script>
-import PageFold               from "~/components/pagefold.vue";
+import PageFold from "~/components/pagefold.vue";
+import { STwitter } from 'vue-socials'
 export default {
-  components: {
-
+  name: 'STwitterSharing',
+  components: { STwitter, PageFold },
+  props: {
+    showNav1: Boolean
   },
-  data: function() {
+  data() {
     return {
       playerReady: false,
       videoPlaying: false,
+      windowFeatures: {},
+      shareOptions: {
+      url: 'https://www.youtube.com/watch?v=ppp5Q70PYPU&t=1s',
+      text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
+      hashtags: ['TwitterBirthdayBash'],      
+    },
+    useNativeBehavior: true,
     };
   },
   mounted: function() {
@@ -148,9 +171,22 @@ export default {
       this._player.playVideo();
       this.videoPlaying = true;
     },
+    passFold: function () {
+      this.$emit('passedFold')
+    },
+    onClose(){},
+    onOpen(){},
+    onBlock(){},
+    onFocus(){},
   },
-  components: {
-    'PageFold': PageFold
-  }
+  // components: {
+  //   'PageFold': PageFold
+  // }
 };
 </script>
+
+<style>
+.hideTwitterButton{
+  opacity: 0;
+}
+</style>

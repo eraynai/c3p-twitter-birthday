@@ -1,12 +1,6 @@
 <template>
 </template>
 
-<style>
-    h1 {
-        color: white;
-    }
-</style>
-
 <script>
     export default {
         name: 'PageFold',
@@ -16,10 +10,12 @@
         };
         },
         mounted(){
+            const _self = this;
             this.$el;
             let observer = new IntersectionObserver((array) => {
                 if (array[0].isIntersecting === false) {
-                    this.$emit("passedFold");
+                    console.log(_self);
+                    _self.$emit("passedFold");
                     observer.disconnect();
                     console.log('intersection working?');
                 }

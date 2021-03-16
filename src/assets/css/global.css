@@ -253,7 +253,12 @@ body {
     .hero-content p{
         font-size: 25px;
     }
-    
+    .cta-content.one p, .cta-content.three p {
+        font-size: 20px;
+    }
+    .hero-content-2 p{
+        font-size: 36px;
+    }
   }
 
 /* Extra Small Devices, Phones */ 

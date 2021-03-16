@@ -73,7 +73,7 @@ body {
 }
 
 .inner-background-cta {
-    background-image: url('../images/Pixel_Girl.png');
+    background-image: url('../images/pixel_girl_2.png');
     /*background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;*/
@@ -148,7 +148,7 @@ body {
     
     .cta-content {
         font-size: 14px;
-        line-height: 23px;
+        
     }
     
     .cta-content p {

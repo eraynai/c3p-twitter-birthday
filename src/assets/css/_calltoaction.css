@@ -6,6 +6,17 @@
     font-style: normal;
     text-align: center;
     margin: 0 auto;
-    line-height: 1.9;
     width: 65%;
+    line-height: 1.5;
+}
+
+
+
+
+.cta-content .one p {
+    padding-bottom: 2rem;
+}
+
+.cta-content .three p {
+    padding-bottom: 0;
 }

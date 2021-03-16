@@ -230,9 +230,6 @@ body {
     a.logo-container.hideTwitterButton.showTwitterButton {
         width: 45%;
     }
-    a.logo-container {
-        width: 45%;
-    }
 }
 
 /* Extra Small Devices, Phones */ 

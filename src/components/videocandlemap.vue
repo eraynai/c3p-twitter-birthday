@@ -3,7 +3,7 @@
     <div style="position: relative;">
         <g-image v-if="!isPlaying" src='~/assets/images/button-play.svg' alt='play button' class="ui" @click="play"/>
         <vue-intersect @enter="play" >
-            <video id="b-video" class="birthday-video" ref="video" autoplay muted loop>
+            <video :title="$t('birthday_cake')" id="b-video" class="birthday-video" ref="video" autoplay muted loop>
                 <source src="/cake_video.mp4" type="video/mp4">
             </video>
         </vue-intersect>

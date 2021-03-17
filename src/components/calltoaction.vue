@@ -1,5 +1,5 @@
 <template>
-    <div class="inner-background-cta">
+    <div class="inner-background-cta" title="Pixelated black and white image of sexual abuse survivor">
         <section class="cta-section wrapper">
             <div class="cta-content">
                 <div class="one"> 

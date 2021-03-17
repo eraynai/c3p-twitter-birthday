@@ -15,7 +15,7 @@
             <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
             <span class="watch-now-text" :class="{ hidden: videoPlaying }">Watch Now</span>
             <g-image
-            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='thumb'
+            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='Video of survivor describing negative experience with Twitter'
             class="play-image" :class="{ hidden: videoPlaying }"/>
           </button>
           <iframe

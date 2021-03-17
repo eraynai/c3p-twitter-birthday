@@ -28,7 +28,7 @@ module.exports = {
         },
         fallbackLocale: 'en', // fallback language
         defaultLocale: 'en', // default language
-        enablePathRewrite: false, // rewrite path with locale prefix, default: true
+        enablePathRewrite: true, // rewrite path with locale prefix, default: true
         rewriteDefaultLanguage: true, // rewrite default locale, default: true
         messages: {
           'fr': require('./src/locales/fr-fr.json'),

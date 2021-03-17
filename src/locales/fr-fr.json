@@ -1,4 +1,5 @@
 {
+    "plea": "#TwitterBirthdayPlea",
     "happy_fifteen": "Joyeux 15",
     "th": "e",
     "birthday": "anniversaire,",
@@ -22,6 +23,8 @@
     "facebook": "logo Facebook",
     "c3p_logo": "logo Centre canadien de protection de l’enfance",
     "birthday_cake": "Photo d'un gâteau d'anniversaire en forme de carte du monde avec des bougies non allumées",
+    "survivor": "Vidéo sur de mauvaises expériences de survivantes et survivants avec Twitter",
+    "pixel_survivor": "Image pixellisée en noir et blanc d'une survivante d'abus sexuel",
     "meta": {
         "description": "Le 21 mars 2021, Twitter aura 15 ans. Ce site vise à leur souhaiter un joyeux anniversaire."
     }

@@ -1,5 +1,5 @@
 <template>
-     <div class="inner-background">
+     <div class="inner-background" :title="$t('pixel_survivor')">
         <section class="hero wrapper">
 
         <div class="hero-content" :class="{ hidden: videoPlaying }">
@@ -15,7 +15,7 @@
             <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
             <span class="watch-now-text" :class="{ hidden: videoPlaying }">{{$t('watch')}}</span>
             <g-image
-            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='Video of survivor describing negative experience with Twitter'
+            src='~/assets/images/stocksy-comp-181761@3x.jpg' :alt="$t('survivor')"
             class="play-image" :class="{ hidden: videoPlaying }"/>
           </button>
           <iframe

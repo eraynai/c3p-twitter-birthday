@@ -4,8 +4,8 @@
     
         <div class="hero-content" :class="{ hidden: videoPlaying }">
           <!--<g-image src='~/assets/images/background-image-2.png' alt='thumb' class="back-image"/>-->
-          <h1>Happy 15<sup id="sup-happy-big">th</sup><br> birthday,</br><span id="blue-twitter">twitter</span></h1>
-          <p>We wish you'd do more to protect</br> victims of child sexual abuse on</br> your platform.</p>
+          <h1>{{$t('happy_fifteen')}}<sup id="sup-happy-big">{{$t('th')}}</sup><br> {{$t('birthday')}}</br><span id="blue-twitter">{{$t('twitter')}}</span></h1>
+          <p>{{$t('wish_protect')}}</br> {{$t('child_abuse')}}</br> {{$t('platform')}}</p>
           </div>
   
         <div id="video-section">

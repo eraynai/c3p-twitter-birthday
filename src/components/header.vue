@@ -13,7 +13,7 @@
                     @popup-focus="onFocus">
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>
                 </s-twitter>
-                <div class="language-switcher" :class="{ hidden: hideNav && !showNav }">
+                <div class="language-switcher" :class="{ hideTranslation: showNav }">
                     <span
                         v-for="(locale, index) in availableLocales"
                         :key="locale"

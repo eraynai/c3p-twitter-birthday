@@ -26,9 +26,9 @@ export default {
   //   // title: this.$t("description")
   //   title: "Home"
   // },
+  title: "Home",
   metaInfo() {
     return {
-      title: this.$i18n.t("description"),
       meta: [
         { name: 'description', content: this.$i18n.t("meta.description") }
       ]

@@ -13,7 +13,7 @@
         <div class="video-wrapper">
           <button @click="play" :disabled="!playerReady">
             <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
-            <span class="watch-now-text" :class="{ hidden: videoPlaying }">Watch Now</span>
+            <span class="watch-now-text" :class="{ hidden: videoPlaying }">{{$t('watch')}}</span>
             <g-image
             src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='thumb'
             class="play-image" :class="{ hidden: videoPlaying }"/>

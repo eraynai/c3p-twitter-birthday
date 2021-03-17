@@ -51,12 +51,6 @@
                 hideNav: false,
                 playerReady: false,
                 windowFeatures: {},
-                shareOptions: {
-                    url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
-                    text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
-                    hashtags: ['TwitterBirthdayBash'],
-                    //via: 'twitterdev',
-                },
                 currentLocale: this.$i18n.locale.toString(),
                 useNativeBehavior: true,
             };
@@ -64,6 +58,13 @@
         computed: {
             availableLocales() {
                 return this.$i18n.availableLocales;
+            },
+            shareOptions() {
+                return {
+                    url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
+                    hashtags: ['TwitterBirthdayBash'],
+                    text: this.$t('tweet')
+                }
             }
         },
         mounted() {

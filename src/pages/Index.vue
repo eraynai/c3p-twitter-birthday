@@ -22,8 +22,13 @@ import CandleVideo            from "~/components/videocandlemap.vue";
 
 
 export default {
-  metaInfo: {
-    title: "Home"
+  title: "Home",
+  metaInfo() {
+    return {
+      meta: [
+        { name: 'description', content: this.$i18n.t("meta.description") }
+      ]
+    };
   },
   components: {
     Header,

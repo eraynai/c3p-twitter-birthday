@@ -15,7 +15,7 @@
             <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
             <span class="watch-now-text" :class="{ hidden: videoPlaying }">Watch Now</span>
             <g-image
-            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='thumb'
+            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='Video of survivor describing negative experience with Twitter'
             class="play-image" :class="{ hidden: videoPlaying }"/>
           </button>
           <iframe
@@ -24,7 +24,7 @@
             height="315"
             allow="autoplay"
             frameborder="0"
-            src="https://www.youtube.com/embed/N_n4gIxv0YI?enablejsapi=1"
+            src="https://www.youtube.com/embed/QbNh6L7sybw?enablejsapi=1"
           ></iframe>
         </div>
         <PageFold @passedFold="passFold()"/>
@@ -73,9 +73,9 @@ export default {
       videoPlaying: false,
       windowFeatures: {},
       shareOptions: {
-      url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
-      text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
-      hashtags: ['TwitterBirthdayBash'],      
+      url: 'https://www.youtube.com/watch?v=QbNh6L7sybw',
+      text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse.',
+      hashtags: ['TwitterBirthdayPlea'],      
     },
     useNativeBehavior: true,
     };

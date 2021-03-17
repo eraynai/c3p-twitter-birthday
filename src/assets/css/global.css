@@ -73,7 +73,7 @@ body {
 }
 
 .inner-background-cta {
-    background-image: url('../images/pixel_girl_2.png');
+    background-image: url('../images/pixel_girl_3.png');
     /*background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;*/
@@ -244,6 +244,7 @@ body {
         margin-top: 5rem;
         background: black;
     }
+    
 }
 
 @media screen and (min-width: 1441px) {

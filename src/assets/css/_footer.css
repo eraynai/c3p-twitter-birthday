@@ -33,6 +33,7 @@
 .terms {
     padding-top: 1rem;
     padding-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .terms ul a {

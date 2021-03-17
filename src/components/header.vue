@@ -13,9 +13,22 @@
                     @popup-focus="onFocus">
                     <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>
                 </s-twitter>
-                <!--<span :class="{ hideTranslation: showNav }">
-                     <a href="#" class="languageOption" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
-                </span>-->
+                <div class="language-switcher" :class="{ hidden: hideNav && !showNav }">
+                    <span
+                        v-for="(locale, index) in availableLocales"
+                        :key="locale"
+                    >
+                        <a
+                            href="#"
+                            class="languageOption"
+                            @click="switchLocale(locale)"
+                            :class="[currentLocale === locale && 'active']"
+                        >
+                            {{locale}}
+                        </a>
+                        <span v-if="index < availableLocales.length - 1">/</span>
+                    </span>
+                </div>
             </div>
             </div>
     </header>
@@ -39,14 +52,13 @@
                 playerReady: false,
                 windowFeatures: {},
                 shareOptions: {
-                url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
-                text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
-                hashtags: ['TwitterBirthdayBash'],
-                //via: 'twitterdev',
+                    url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
+                    text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
+                    hashtags: ['TwitterBirthdayBash'],
+                    //via: 'twitterdev',
+                },
                 currentLocale: this.$i18n.locale.toString(),
-                
-            },
-            useNativeBehavior: true,
+                useNativeBehavior: true,
             };
         },
         computed: {
@@ -57,6 +69,7 @@
         mounted() {
             /*this.showHideNav();*/
             window.addEventListener("scroll", this.showHideNav);
+            console.log(">>>>>", this.currentLocale);
             //this.englishSelected = true;
         },
         methods: {
@@ -75,6 +88,16 @@
                 })
             }
         }
+        // I am on a call - o- ok, will be with you shortly
     }
 
 </script>
+<style lang="css">
+.languageOption {
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+</style>

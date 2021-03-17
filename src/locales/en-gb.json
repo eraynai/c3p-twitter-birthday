@@ -2,5 +2,8 @@
     "call_to_action_p_one": "We offered to proactively detect and report known child sexual abuse materials (CSAM) being shared on their platform – at no cost to them – but they declined.",
     "call_to_action_p_two": "They do not provide users with the ability to directly report tweets or DM as containing child sexual abuse material, which we believe increases the time it stays on the site.",
     "call_to_action_p_three": "This needs to change.",
-    "description": "Description English"
+    "description": "Description English",
+    "meta": {
+        "description": "On March 21st, 2021, Twitter is turning 15. This site is dedicated to wishing them a happy birthday. "
+    }
 }

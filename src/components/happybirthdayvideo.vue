@@ -73,9 +73,9 @@ export default {
       videoPlaying: false,
       windowFeatures: {},
       shareOptions: {
-      url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
-      text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse. @Jack',
-      hashtags: ['TwitterBirthdayBash'],      
+      url: 'https://www.youtube.com/watch?v=QbNh6L7sybw',
+      text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse.',
+      hashtags: ['TwitterBirthdayPlea'],      
     },
     useNativeBehavior: true,
     };

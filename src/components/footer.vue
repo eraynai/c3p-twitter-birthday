@@ -3,7 +3,7 @@
     <footer class="footerContent">
     <div class="container wrapper"> 
         <div class="social-logos">
-            <a href="https://www.protectchildren.ca/en/" target="_blank"><g-image class="cp3-logo" src="~/assets/images/c-3-p-logo.svg" alt="c3p logo" /></a>
+            <a href="https://www.protectchildren.ca/en/" target="_blank"><g-image class="cp3-logo" src="~/assets/images/c-3-p-logo.svg" alt="Candian Centre for Child Protection logo" /></a>
             <div class="social">
                 <a href="https://www.facebook.com/CanadianCentreForChildProtection/" target="_blank"><g-image src="~/assets/images/facebook-white.svg" alt="facebook icon" /></a>
                 <a href="https://www.instagram.com/cdnchildprotect" target="_blank"><g-image src="~/assets/images/instagram-white.svg" alt="instagram icon" /></a>

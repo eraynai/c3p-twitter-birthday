@@ -20,7 +20,7 @@
 
 <script>
 export default {
-    /*{{$t('call_to_action_p_two')}*/
+    /*{{$t('call_to_action_p_two')}}*/
 }
 </script>
 

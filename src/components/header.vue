@@ -11,7 +11,8 @@
                     @popup-open="onOpen"
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>
+                    <!--<g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>-->
+                    <g-image class="cta" :src="require(`!!assets-loader?width=952!@images/` + $t('nav_bar') + '.png')"/>
                 </s-twitter>
                 <div class="language-switcher" :class="{ hideTranslation: showNav }">
                     <span
@@ -19,7 +20,7 @@
                         :key="locale"
                     >
                         <a
-                            href="#"
+                            
                             class="languageOption"
                             @click="switchLocale(locale)"
                             :class="[currentLocale === locale && 'active']"
@@ -83,10 +84,11 @@
             onBlock(){},
             onFocus(){},
             switchLocale(locale) {
-                this.currentLocale = locale;
+                this.currentLocale = locale;   
+                console.log("clicked", this.currentLocale, this.$route.path)             
                 this.$router.push({
                     path: this.$tp(this.$route.path, this.currentLocale, true)
-                })
+                }) 
             }
         }
         // I am on a call - o- ok, will be with you shortly

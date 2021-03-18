@@ -52,7 +52,7 @@
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
                     <!-- <g-image class="cta" id="header--tweet-cta" src='~/assets/images/CTA.png' alt='tweet for change'/> -->
-                    <g-image class="cta" :src="require(`!!assets-loader?width=1150!@images/` + $t('hero_button') + '.png')"/>
+                    <g-image class="cta" :src="require(`!!assets-loader?!@images/` + $t('hero_button') + '.png')"/>
          </s-twitter>
       </div>
 

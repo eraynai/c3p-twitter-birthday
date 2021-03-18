@@ -13,7 +13,7 @@
                     @popup-focus="onFocus">
                     <!--<g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>-->
                     <div class="img-wrapper"> 
-                    <g-image class="cta" :src="require(`!!assets-loader?width=952!@images/` + $t('nav_bar') + '.png')" :alt='$t('tweet_button')'/>
+                    <g-image class="cta" :src="require(`!!assets-loader?width=952!@images/` + $t('nav_bar') + '.png')"/>
                     <span class="nav-text">{{$t('nav_text')}}</span>
                     </div>
                 </s-twitter>

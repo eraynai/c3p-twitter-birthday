@@ -24,7 +24,7 @@
             height="315"
             allow="autoplay"
             frameborder="0"
-            src="https://www.youtube.com/embed/QbNh6L7sybw?enablejsapi=1"
+            :src="$t('youtube_embed')"
           ></iframe>
         </div>
         <PageFold @passedFold="passFold()"/>

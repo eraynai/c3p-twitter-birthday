@@ -8,9 +8,9 @@
                 <a href="https://www.protectchildren.ca/en/" target="_blank"><g-image class="cp3-logo" :src="require(`!!assets-loader?width=407!@images/` + $t('logo') + '.png')" :alt="$t('c3p_logo')" /></a>
                 
                 <div class="social">
-                    <a href="https://www.facebook.com/CanadianCentreForChildProtection/" target="_blank"><g-image src="~/assets/images/facebook-white.svg" :alt="$t('facebook')" /></a>
+                    <a :href="$t('facebook_link')" target="_blank"><g-image src="~/assets/images/facebook-white.svg" :alt="$t('facebook')" /></a>
                     <a href="https://www.instagram.com/cdnchildprotect" target="_blank"><g-image src="~/assets/images/instagram-white.svg" :alt="$t('instagram')" /></a>
-                    <a href="https://twitter.com/cdnchildprotect" target="_blank"><g-image src="~/assets/images/twitter-white_v2.svg" :alt="$t('twitter_icon')" /></a>
+                    <a :href="$t('twitter_link')" target="_blank"><g-image src="~/assets/images/twitter-white_v2.svg" :alt="$t('twitter_icon')" /></a>
                     <a href="https://www.youtube.com/user/ProtectChildrenCA" target="_blank"><g-image class="youIcon" src="~/assets/images/youtube-white_v2.svg" :alt="$t('youtube')" /></a>
                 </div>
             </div>

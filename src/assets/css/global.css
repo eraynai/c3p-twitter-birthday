@@ -249,6 +249,16 @@ body {
         font-size: 12px;
         
     }
+
+    .text-test {
+
+    position: absolute;
+    left: 75%;
+    right: 0;
+    top: 34%;
+    font-size: 9px;
+    color: white;
+    }
     
 }
 

@@ -42,7 +42,7 @@
     </div>
 
     </section>
-    <div class="position-container wrapper">
+    <div class="position-container wrapper ">
        <s-twitter class="logo-container" :class="{ hideTwitterButton2: showNav1 }"
                     :window-features="windowFeatures"
                     :share-options="shareOptions"
@@ -52,12 +52,19 @@
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
                     <!-- <g-image class="cta" id="header--tweet-cta" src='~/assets/images/CTA.png' alt='tweet for change'/> -->
-                    <g-image class="cta" :src="require(`!!assets-loader?!@images/` + $t('hero_button') + '.png')"/>
-         </s-twitter>
+                    <div class="img-wrapper">
+                      <g-image class="cta" :src="require(`!!assets-loader?!@images/` + $t('hero_button') + '.png')"/>
+                      <span class="text-test">Test Me Working</span>
+                    </div>
+         </s-twitter> 
       </div>
 
     </div>
 </template>
+<div >
+  img
+  span
+</div>
 
 <script>
 import PageFold from "~/components/pagefold.vue";

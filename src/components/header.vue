@@ -91,7 +91,6 @@
                 }) 
             }
         }
-        // I am on a call - o- ok, will be with you shortly
     }
 
 </script>

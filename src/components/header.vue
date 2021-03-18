@@ -63,7 +63,7 @@
             shareOptions() {
                 return {
                     url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
-                    hashtags: ['TwitterBirthdayBash'],
+                    hashtags: ['TwitterBirthdayPlea'],
                     text: this.$t('tweet')
                 }
             }

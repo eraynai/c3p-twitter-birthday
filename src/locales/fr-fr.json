@@ -7,7 +7,7 @@
     "wish_protect": "On aimerait que vous en fassiez davantage pour protéger",
     "child_abuse": "les victimes d’abus pédosexuels sur",
     "platform": "votre plateforme.",
-    "watch": "Jouer la vidéo",
+    "watch": "Regardez la video",
     "call_to_action_p_one": "Nous leur avons offert de détecter proactivement et de signaler les images d’abus pédosexuels diffusées sur leur plateforme. Ça ne leur aurait rien coûté, mais ils ont décliné notre offre.",
     "call_to_action_p_two": "Les utilisateurs n’ont pas la possibilité de signaler directement un tweet ou un MD contenant des images d’abus pédosexuels. Nous estimons que cela a pour effet de maintenir ces images en ligne plus longtemps et d’en faciliter la propagation.",
     "call_to_action_p_three": "Demandons à Twitter et à toutes les autres plateformes en ligne de faire mieux et de supprimer rapidement les images d’abus pédosexuels.",
@@ -35,6 +35,9 @@
     "privacy_policy": "https://www.protectchildren.ca/fr/politique-de-confidentialite/",
     "terms_use":"https://www.protectchildren.ca/fr/conditions-utilisation/",
     "contact_us":"https://www.protectchildren.ca/fr/nous-contacter/",
+    "facebook_link":"https://www.facebook.com/centrecanadiendeprotectiondelenfance",
+    "twitter_link":"https://twitter.com/ProtegerEnfant",
+    "alt_button":"Exigez des changements",
     "meta": {
         "description": "Le 21 mars 2021, Twitter aura 15 ans. Ce site vise à leur souhaiter un joyeux anniversaire."
     }

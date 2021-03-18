@@ -102,7 +102,7 @@ body {
     left: 85%;
     right: 0;
     top: 40%;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     color:#fff;
     text-transform: uppercase;
     font-family: quatro, sans-serif;
@@ -112,7 +112,7 @@ body {
     position: absolute;
     left: 83%;
     right: 0;
-    top: 38%;
+    top: 41%;
     font-size: .8vw;
     color:#fff;
     text-transform: uppercase;
@@ -121,7 +121,12 @@ body {
 
 /*New styles*/
 @media screen and (max-width: 920px) and (min-width: 769px){
+    
 
+    .text-test {
+        
+        top: 42%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -195,6 +200,7 @@ body {
     .hero-content-2 p {
         font-size: 25.9px;
         line-height: 30.2px;
+        width: 84%;
     }
 
     #sup-happy-big {
@@ -275,28 +281,34 @@ body {
 
     .text-test {
 
-    position: absolute;
-    left: 75%;
-    right: 0;
-    top: 35%;
-    font-size: 0.8vw;
-    color:#fff;
-    text-transform: capitalize;
+        position: absolute;
+        left: 73%;
+        right: 0%;
+        top: 40%;
+        font-size: 1.7vw;
+        color: #fff;
+        text-transform: uppercase;
     }
 
     .nav-text{
         position: absolute;
         left: 69%;
         right: 0;
-        top: 39%;
+        top: 41%;
         font-size: 1.8vw;
         color:#fff;
         text-transform: uppercase;
         font-family: quatro, sans-serif;
         } 
     
+        .watch-now-text {
+            
+            top: 60%;
+            right: 48%;
+            font-size: 1.4vw;
+        
+    }
 }
-
 @media screen and (min-width: 1441px) {
     .hero-content h1{
         font-size: 101px;
@@ -315,15 +327,25 @@ body {
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-   
+    .nav-text {
+        top: 41%;
+    }
+
+    .watch-now-text {
+        
+        font-size: 1.7vw;
+        right: 47%;
+    }
 
 }
 
 
  /* Large Devices, Wide Screens */
  @media only screen and (max-width : 1200px) {
-
+    
+    
 }
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {

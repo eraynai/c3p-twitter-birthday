@@ -31,6 +31,9 @@
     "nav_bar": "tweet-nav-bar_clean",
     "nav_text":"TWEET FOR CHANGE",
     "youtube_twitter":"https://www.youtube.com/watch?v=N_n4gIxv0YI",
+    "privacy_policy": "https://www.protectchildren.ca/en/privacy-policy/",
+    "terms_use":"https://www.protectchildren.ca/en/terms-of-use/",
+    "contact_us":"https://www.protectchildren.ca/en/contact/",
     "meta": {
         "description": "On March 21st, 2021, Twitter is turning 15. This site is dedicated to wishing them a happy birthday. "
     }

@@ -16,9 +16,9 @@
             </div>
             <div class="terms">
                  <ul>
-                    <li><a href="https://www.protectchildren.ca/en/privacy-policy/" target="_blank">{{$t('privacy')}}</a></li>
-                    <li><a href="https://www.protectchildren.ca/en/terms-of-use/" target="_blank">{{$t('terms')}}</a></li>
-                    <li><a href="https://www.protectchildren.ca/en/contact/" target="_blank">{{$t('contact')}}</a> </li>
+                    <li><a :href="$t('privacy_policy')" target="_blank">{{$t('privacy')}}</a></li>
+                    <li><a :href="$t('terms_use')" target="_blank">{{$t('terms')}}</a></li>
+                    <li><a :href="$t('contact_us')" target="_blank">{{$t('contact')}}</a> </li>
                 </ul>
             </div>
         </div>

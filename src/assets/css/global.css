@@ -84,7 +84,7 @@ body {
 
 
 
-#logo span {
+#logo {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-size: 14px;
@@ -95,6 +95,29 @@ body {
 .heroContent-2.wrapper {
     padding-top: 10rem;
 }
+
+.text-test {
+
+    position: absolute;
+    left: 85%;
+    right: 0;
+    top: 40%;
+    font-size: 0.7vw;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: quatro, sans-serif;
+    }
+
+    .nav-text{
+    position: absolute;
+    left: 83%;
+    right: 0;
+    top: 38%;
+    font-size: .8vw;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: quatro, sans-serif;
+    } 
 
 /*New styles*/
 @media screen and (max-width: 920px) and (min-width: 769px){
@@ -235,7 +258,7 @@ body {
         width: 65%;
     }
 
-    #logo span {
+    #logo {
 
         font-size: 11px;
     }
@@ -244,6 +267,33 @@ body {
         margin-top: 5rem;
         background: black;
     }
+    
+    .language-switcher {
+        font-size: 12px;
+        
+    }
+
+    .text-test {
+
+    position: absolute;
+    left: 75%;
+    right: 0;
+    top: 35%;
+    font-size: 0.8vw;
+    color:#fff;
+    text-transform: capitalize;
+    }
+
+    .nav-text{
+        position: absolute;
+        left: 69%;
+        right: 0;
+        top: 39%;
+        font-size: 1.8vw;
+        color:#fff;
+        text-transform: uppercase;
+        font-family: quatro, sans-serif;
+        } 
     
 }
 
@@ -260,6 +310,7 @@ body {
     .hero-content-2 p{
         font-size: 36px;
     }
+    
   }
 
 /* Extra Small Devices, Phones */ 

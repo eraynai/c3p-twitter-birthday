@@ -1,21 +1,21 @@
 <template>
-     <div class="inner-background">
+     <div class="inner-background" :alt="$t('pixel_survivor')">
         <section class="hero wrapper">
-    
+
         <div class="hero-content" :class="{ hidden: videoPlaying }">
           <!--<g-image src='~/assets/images/background-image-2.png' alt='thumb' class="back-image"/>-->
-          <h1>Happy 15<sup id="sup-happy-big">th</sup><br> birthday,</br><span id="blue-twitter">twitter</span></h1>
-          <p>We wish you'd do more to protect</br> victims of child sexual abuse on</br> your platform.</p>
+          <h1>{{$t('happy_fifteen')}}<sup id="sup-happy-big">{{$t('th')}}</sup><br> {{$t('birthday')}}</br><span id="blue-twitter">{{$t('twitter')}}</span></h1>
+          <p>{{$t('wish_protect')}}</br> {{$t('child_abuse')}}</br> {{$t('platform')}}</p>
           </div>
-  
+
         <div id="video-section">
         <div class="video-size">
         <div class="video-wrapper">
           <button @click="play" :disabled="!playerReady">
             <g-image src='~/assets/images/button-play.svg' alt='play button' class="ui" :class="{ hidden: videoPlaying }" />
-            <span class="watch-now-text" :class="{ hidden: videoPlaying }">Watch Now</span>
+            <span class="watch-now-text" :class="{ hidden: videoPlaying }">{{$t('watch')}}</span>
             <g-image
-            src='~/assets/images/stocksy-comp-181761@3x.jpg' alt='Video of survivor describing negative experience with Twitter'
+            src='~/assets/images/stocksy-comp-181761@3x.jpg' :alt="$t('survivor')"
             class="play-image" :class="{ hidden: videoPlaying }"/>
           </button>
           <iframe
@@ -24,25 +24,25 @@
             height="315"
             allow="autoplay"
             frameborder="0"
-            src="https://www.youtube.com/embed/QbNh6L7sybw?enablejsapi=1"
+            :src="$t('youtube_embed')"
           ></iframe>
         </div>
         <PageFold @passedFold="passFold()"/>
-      
+
       </div>
- 
+
     <!--<g-image src="~/assets/images/play_button.png" alt="play button" />-->
-    
-    
-      
+
+
+
     <!--We disable the play button until the player is ready.
     <button @click="play" :disabled="!playerReady" class="watchnow-button">
       <g-image src="~/assets/images/play_button.png" alt="play button" />
     </button>-->
     </div>
-    
+
     </section>
-    <div class="position-container wrapper">
+    <div class="position-container wrapper ">
        <s-twitter class="logo-container" :class="{ hideTwitterButton2: showNav1 }"
                     :window-features="windowFeatures"
                     :share-options="shareOptions"
@@ -51,12 +51,20 @@
                     @popup-open="onOpen"
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/CTA.png' alt='tweet for change'/>
-         </s-twitter>
+                    <!-- <g-image class="cta" id="header--tweet-cta" src='~/assets/images/CTA.png' alt='tweet for change'/> -->
+                    <div class="img-wrapper">
+                      <g-image class="cta" :src="require(`!!assets-loader?!@images/` + $t('hero_button') + '.png')"/>
+                      <span class="text-test">{{$t('hero_text')}}</span>
+                    </div>
+         </s-twitter> 
       </div>
-    
+
     </div>
 </template>
+<div >
+  img
+  span
+</div>
 
 <script>
 import PageFold from "~/components/pagefold.vue";
@@ -72,13 +80,17 @@ export default {
       playerReady: false,
       videoPlaying: false,
       windowFeatures: {},
-      shareOptions: {
-      url: 'https://www.youtube.com/watch?v=QbNh6L7sybw',
-      text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse.',
-      hashtags: ['TwitterBirthdayPlea'],      
-    },
-    useNativeBehavior: true,
+      useNativeBehavior: true,
     };
+  },
+  computed: {
+    shareOptions () {
+      return {
+        url: this.$t('youtube_twitter'),
+        hashtags: ['TwitterBirthdayPlea'],
+        text: this.$t('tweet')
+      }
+    }
   },
   mounted: function() {
     const _self = this;
@@ -165,7 +177,7 @@ export default {
   methods: {
     play: function() {
       console.log("Playing video.");
-      /*  
+      /*
         Finally, we can use the `_player` reference to play the video.
       */
       this._player.playVideo();

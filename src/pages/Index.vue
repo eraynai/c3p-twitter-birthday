@@ -3,7 +3,7 @@
     <Header :showNav="showNav" />
     <main>
       <HappyBirthday @passedFold="showNav=true" v-bind:showNav1="showNav" />
-      <CallToAction />
+       <CallToAction />
       <CandleMap />
       <CandleVideo />
     </main>

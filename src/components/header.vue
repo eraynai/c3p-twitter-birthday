@@ -11,11 +11,28 @@
                     @popup-open="onOpen"
                     @popup-block="onBlock"
                     @popup-focus="onFocus">
-                    <g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>
+                    <!--<g-image class="cta" id="header--tweet-cta" src='~/assets/images/tweet-nav-bar.png' alt='tweet for change'/>-->
+                    <div class="img-wrapper"> 
+                    <g-image class="cta" :src="require(`!!assets-loader?width=952!@images/` + $t('nav_bar') + '.png')"/>
+                    <span class="nav-text">{{$t('nav_text')}}</span>
+                    </div>
                 </s-twitter>
-                <!--<span :class="{ hideTranslation: showNav }">
-                     <a href="#" class="languageOption" v-for="locale in availableLocales" :key="locale" @click="switchLocale(locale)"> {{locale}} </a>
-                </span>-->
+                <div class="language-switcher" :class="{ hideTranslation: showNav }">
+                    <span
+                        v-for="(locale, index) in availableLocales"
+                        :key="locale"
+                    >
+                        <a
+                            
+                            class="languageOption"
+                            @click="switchLocale(locale)"
+                            :class="[currentLocale === locale && 'active']"
+                        >
+                            {{locale}}
+                        </a>
+                        <span v-if="index < availableLocales.length - 1">/</span>
+                    </span>
+                </div>
             </div>
             </div>
     </header>
@@ -38,25 +55,26 @@
                 hideNav: false,
                 playerReady: false,
                 windowFeatures: {},
-                shareOptions: {
-                url:  'https://www.youtube.com/watch?v=QbNh6L7sybw',
-                text: '@Twitter, it’s time to grow up and take the lead in social platforms protecting victims of child sexual abuse.',
-                hashtags: ['TwitterBirthdayPlea'],
-                //via: 'twitterdev',
                 currentLocale: this.$i18n.locale.toString(),
-                
-            },
-            useNativeBehavior: true,
+                useNativeBehavior: true,
             };
         },
         computed: {
             availableLocales() {
                 return this.$i18n.availableLocales;
+            },
+            shareOptions() {
+                return {
+                    url: this.$t('youtube_twitter'),
+                    hashtags: ['TwitterBirthdayPlea'],
+                    text: this.$t('tweet')
+                }
             }
         },
         mounted() {
             /*this.showHideNav();*/
             window.addEventListener("scroll", this.showHideNav);
+            console.log(">>>>>", this.currentLocale);
             //this.englishSelected = true;
         },
         methods: {
@@ -69,12 +87,22 @@
             onBlock(){},
             onFocus(){},
             switchLocale(locale) {
-                this.currentLocale = locale;
+                this.currentLocale = locale;   
+                console.log("clicked", this.currentLocale, this.$route.path)             
                 this.$router.push({
                     path: this.$tp(this.$route.path, this.currentLocale, true)
-                })
+                }) 
             }
         }
     }
 
 </script>
+<style lang="css">
+.languageOption {
+    text-transform: uppercase;
+}
+
+.active {
+    border-bottom: 1px solid white;
+}
+</style>

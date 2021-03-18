@@ -102,7 +102,7 @@ body {
     left: 85%;
     right: 0;
     top: 40%;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
     color:#fff;
     text-transform: uppercase;
     font-family: quatro, sans-serif;
@@ -301,8 +301,14 @@ body {
         font-family: quatro, sans-serif;
         } 
     
+        .watch-now-text {
+            
+            top: 60%;
+            right: 48%;
+            font-size: 1.4vw;
+        
+    }
 }
-
 @media screen and (min-width: 1441px) {
     .hero-content h1{
         font-size: 101px;
@@ -328,7 +334,7 @@ body {
     .watch-now-text {
         
         font-size: 1.7vw;
-        right: 48%;
+        right: 47%;
     }
 
 }

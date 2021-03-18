@@ -54,7 +54,7 @@
                     <!-- <g-image class="cta" id="header--tweet-cta" src='~/assets/images/CTA.png' alt='tweet for change'/> -->
                     <div class="img-wrapper">
                       <g-image class="cta" :src="require(`!!assets-loader?!@images/` + $t('hero_button') + '.png')"/>
-                      <span class="text-test">Test Me Working</span>
+                      <span class="text-test">{{$t('hero_text')}}</span>
                     </div>
          </s-twitter> 
       </div>
@@ -86,7 +86,7 @@ export default {
   computed: {
     shareOptions () {
       return {
-        url: 'https://www.youtube.com/watch?v=N_n4gIxv0YI',
+        url: this.$t('youtube_twitter'),
         hashtags: ['TwitterBirthdayPlea'],
         text: this.$t('tweet')
       }

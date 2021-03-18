@@ -27,7 +27,10 @@
     "logo": "c3p_english",
     "youtube_embed": "https://www.youtube.com/embed/QbNh6L7sybw?enablejsapi=1",
     "hero_button": "CTA_blank",
-    "nav_bar": "tweet-nav-bar",
+    "hero_text":"TWEET FOR CHANGE",
+    "nav_bar": "tweet-nav-bar_clean",
+    "nav_text":"TWEET FOR CHANGE",
+    "youtube_twitter":"https://www.youtube.com/watch?v=N_n4gIxv0YI",
     "meta": {
         "description": "On March 21st, 2021, Twitter is turning 15. This site is dedicated to wishing them a happy birthday. "
     }

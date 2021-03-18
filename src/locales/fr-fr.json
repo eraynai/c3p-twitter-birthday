@@ -28,7 +28,10 @@
     "logo": "c3p_french",
     "youtube_embed": "https://www.youtube.com/embed/00I1CwyXT4o?enablejsapi=1",
     "hero_button": "CTA_blank",
-    "nav_bar": "tweet-nav-bar-fr",
+    "hero_text":"Exigez des changements",
+    "nav_bar": "tweet-nav-bar_clean",
+    "nav_text": "Exigez des changements",
+    "youtube_twitter": "https://www.youtube.com/watch?v=00I1CwyXT4o",
     "meta": {
         "description": "Le 21 mars 2021, Twitter aura 15 ans. Ce site vise à leur souhaiter un joyeux anniversaire."
     }

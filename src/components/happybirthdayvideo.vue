@@ -1,5 +1,5 @@
 <template>
-     <div class="inner-background" :title="$t('pixel_survivor')">
+     <div class="inner-background" :alt="$t('pixel_survivor')">
         <section class="hero wrapper">
 
         <div class="hero-content" :class="{ hidden: videoPlaying }">

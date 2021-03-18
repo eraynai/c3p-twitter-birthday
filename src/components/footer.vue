@@ -2,7 +2,11 @@
     <footer class="footerContent">
         <div class="container wrapper"> 
             <div class="social-logos">
-                <a href="https://www.protectchildren.ca/en/" target="_blank"><g-image class="cp3-logo" src="~/assets/images/c-3-p-logo.svg" :alt="$t('c3p_logo')" /></a>
+                <!-- <a href="https://www.protectchildren.ca/en/" target="_blank">
+                    <g-image class="cp3-logo" :src="'~/assets/images/' + $t('logo') + '.png'" :alt="$t('c3p_logo')" />
+                    </a>                 -->
+                <a href="https://www.protectchildren.ca/en/" target="_blank"><g-image class="cp3-logo" :src="require(`!!assets-loader?width=407!@images/` + $t('logo') + '.png')" :alt="$t('c3p_logo')" /></a>
+                
                 <div class="social">
                     <a href="https://www.facebook.com/CanadianCentreForChildProtection/" target="_blank"><g-image src="~/assets/images/facebook-white.svg" :alt="$t('facebook')" /></a>
                     <a href="https://www.instagram.com/cdnchildprotect" target="_blank"><g-image src="~/assets/images/instagram-white.svg" :alt="$t('instagram')" /></a>
@@ -20,3 +24,6 @@
         </div>
     </footer>
 </template>
+<script>
+
+</script>

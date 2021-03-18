@@ -113,7 +113,7 @@ body {
     left: 83%;
     right: 0;
     top: 38%;
-    font-size: 1vw;
+    font-size: .8vw;
     color:#fff;
     text-transform: uppercase;
     font-family: quatro, sans-serif;
@@ -310,6 +310,7 @@ body {
     .hero-content-2 p{
         font-size: 36px;
     }
+    
   }
 
 /* Extra Small Devices, Phones */ 
